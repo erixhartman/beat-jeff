@@ -124,7 +124,7 @@ export default function Memo() {
           </div>
           <div className="panel">
             <h4>For the league chat</h4>
-            <p style={{ font: '500 15px/1.45 var(--font-table)', margin: '0 0 10px' }}>{memo.post}</p>
+            <p style={{ font: '500 15px/1.45 var(--font-table)', margin: '0 0 10px', whiteSpace: 'pre-line' }}>{memo.post}</p>
             <button className="btn" onClick={copy}>{copied ? 'Copied' : 'Copy post'}</button>
           </div>
           {!demo && <button className="btn" onClick={signOut}>Forget token on this device</button>}
