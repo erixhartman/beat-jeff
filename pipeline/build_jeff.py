@@ -7,7 +7,7 @@ CATS = ['R', 'HR', 'RBI', 'SB', 'AVG', 'OPS', 'W', 'SV', 'K', 'ERA', 'WHIP', 'KB
 LOW = {'ERA', 'WHIP'}
 
 def num(x):
-    try: return float(x)
+    try: return float(str(x).rstrip('*'))
     except Exception: return None
 
 def compare(a, b):
