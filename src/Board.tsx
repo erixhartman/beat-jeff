@@ -55,7 +55,7 @@ export default function Board() {
     const target = nextMine === current ? afterThat : nextMine
     const withChance = list.map(p => ({ p, ch: target ? chance(p.est, target) : null }))
     const s = [...withChance]
-    if (sortBy === 'value') s.sort((x, y) => (y.p.value ?? -99) - (x.p.value ?? -99))
+    if (sortBy === 'value') s.sort((x, y) => (x.p.overall ?? 9999) - (y.p.overall ?? 9999))
     else if (sortBy === 'chance') s.sort((x, y) => (x.ch ?? 0) - (y.ch ?? 0))
     else s.sort((x, y) => x.p.est - y.p.est)
     return s.slice(0, 300)
@@ -102,7 +102,7 @@ export default function Board() {
             </div>
             <div className="seg" role="group" aria-label="Sort">
               <button aria-pressed={sortBy === 'est'} onClick={() => setSortBy('est')}>Expected order</button>
-              <button aria-pressed={sortBy === 'value'} onClick={() => setSortBy('value')}>League value</button>
+              <button aria-pressed={sortBy === 'value'} onClick={() => setSortBy('value')}>2026 rank</button>
               <button aria-pressed={sortBy === 'chance'} onClick={() => setSortBy('chance')}>Gone soonest</button>
             </div>
             <input className="search" type="search" placeholder="Find a player" value={q} onChange={e => setQ(e.target.value)} aria-label="Find a player" />
@@ -112,9 +112,8 @@ export default function Board() {
             <table className="stats">
               <thead>
                 <tr>
-                  <th>Est.</th><th className="l">Player</th><th className="l">Pos</th><th className="l">Team</th>
-                  <th title="2026 league value. Hitters and pitchers are on separate scales.">2026 value</th>
-                  <th>NBC</th><th>PL SP</th>
+                  <th title="Where he's expected to go in a 12-team draft">Expected pick</th><th className="l">Player</th><th className="l">Pos</th><th className="l">Team</th>
+                  <th title="Rank on the 2026 rankings tab, 1–500 across hitters and pitchers">2026 rank</th>
                   <th title={target ? `Chance he's still available at pick ${target}` : ''}>{target ? `There at ${target}?` : 'There?'}</th>
                   <th className="l">Mark</th>
                 </tr>
@@ -128,9 +127,7 @@ export default function Board() {
                       <td className="l name">{p.name}</td>
                       <td className="l pos-chip">{p.pos.join(', ')}</td>
                       <td className="l dim">{p.team}</td>
-                      <td className="val">{p.value == null ? '–' : p.value.toFixed(1)}</td>
-                      <td className="dim">{p.nbc ?? '–'}</td>
-                      <td className="dim">{p.pl ?? '–'}</td>
+                      <td className="val">{p.overall ?? '–'}</td>
                       <td className={ch == null ? 'dim' : ch < 0.35 ? 'z-neg' : ch > 0.75 ? 'z-pos' : ''}>{t ? `#${t.at}` : ch == null ? '–' : `${Math.round(ch * 100)}%`}</td>
                       <td className="l">
                         {t ? <span className="dim">{t.mine ? 'Yours' : 'Taken'}</span> : (
@@ -147,8 +144,9 @@ export default function Board() {
             </table>
           </div>
           <p className="note">
-            Est. = expected draft slot: NBC's 2027 rank where he's ranked; starters outside NBC's top 150 are placed by Pitcher List's order; everyone
-            else by 2026 league value. The availability chance assumes picks land within about 30% of that slot either way. It's a rough guide, not a projection of this room.
+            Expected pick comes from the experts' 2027 rankings (NBC's top 150, then Pitcher List's order for starters, then 2026 value for everyone else).
+            2026 rank is this league's own scoring of last season, so a big gap between the two is either a bargain or a warning: check why.
+            The chance he's still there assumes picks land within about 30% of the expected slot. It's a rough guide, not a projection of this room.
           </p>
         </div>
         <aside className="side">

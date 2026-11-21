@@ -40,6 +40,11 @@ for x in sorted([v for v in pool.values() if v['g'] == 'B'], key=lambda v: v['ra
 for x in sorted([v for v in pool.values() if v['g'] == 'P'], key=lambda v: v['rank'])[:250]: get(x['name'], 'P')
 
 rows = list(board.values())
+# 2026 rank = the same 1-500 rank shown on the rankings tab; blank outside it
+shown = {(norm(r['name']), 'B'): r['overall'] for r in V['hitters']} | {(norm(r['name']), 'P'): r['overall'] for r in V['pitchers']}
+for r in rows:
+    r['overall'] = shown.get((norm(r['name']), r['g']))
+    r.pop('var', None)
 # estimated pick: NBC rank; SPs outside it by Pitcher List order (about 1 in 3 picks after 150 is an SP); everyone else after 150 by 2026 value
 for r in rows:
     if r.get('nbc'): r['est'] = r['nbc']; r['estFrom'] = 'NBC'

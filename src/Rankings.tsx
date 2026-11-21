@@ -14,7 +14,7 @@ export default function Rankings() {
   const [pos, setPos] = useState('All')
   const [mode, setMode] = useState<'stats' | 'values'>('stats')
   const [q, setQ] = useState('')
-  const [sort, setSort] = useState<{ key: string; asc: boolean }>({ key: 'rank', asc: true })
+  const [sort, setSort] = useState<{ key: string; asc: boolean }>({ key: 'overall', asc: true })
 
   const cols: Col[] = useMemo(() => {
     const cats = (g === 'B' ? HCATS : PCATS) as readonly Cat[]
@@ -30,10 +30,10 @@ export default function Rankings() {
       ? { key: 'ab', label: 'AB', get: r => (r as Hitter).ab }
       : { key: 'ip', label: 'IP', get: r => (r as Pitcher).ip, fmt: n => n.toFixed(0) }
     return [
-      { key: 'rank', label: 'Rk', get: r => r.rank, asc: true },
+      { key: 'overall', label: 'Rank', get: r => r.overall, asc: true },
       vol,
       ...statCols,
-      { key: 'value', label: 'Value', get: r => r.value, fmt: n => n.toFixed(1), cls: 'val' },
+      { key: 'var', label: 'Value', get: r => r.var, fmt: n => n.toFixed(1), cls: 'val' },
       { key: 'equalRank', label: 'Std rk', get: r => r.equalRank, asc: true, cls: 'dim' },
       { key: 'yahoo', label: 'Yahoo', get: r => r.yahoo, asc: true, cls: 'dim' },
       { key: 'nbc', label: 'NBC 27', get: r => r.nbc, asc: true, cls: 'dim' },
@@ -60,7 +60,7 @@ export default function Rankings() {
   if (!v) return <p>Loading rankings…</p>
 
   const clickSort = (c: Col) => setSort(s => (s.key === c.key ? { key: c.key, asc: !s.asc } : { key: c.key, asc: c.asc ?? false }))
-  const switchGroup = (ng: Group) => { setG(ng); setPos('All'); setSort({ key: 'rank', asc: true }) }
+  const switchGroup = (ng: Group) => { setG(ng); setPos('All'); setSort({ key: 'overall', asc: true }) }
 
   return (
     <section>
@@ -118,7 +118,9 @@ export default function Rankings() {
         </table>
       </div>
       <p className="note">
-        Value = sum of category scores × weight. Std rk = rank if every category counted equally. Yahoo = final 2026 rank in our league (blank if
+        Rank runs 1–500 across hitters and pitchers together. Value = sum of category scores × weight, measured above a replacement-level player
+        (the 156th-best hitter or 108th-best pitcher, about what 12 teams roster), so a hitter's and a pitcher's value can be compared. Std rk = rank
+        within hitters or pitchers if every category counted equally. Yahoo = final 2026 rank in our league (blank if
         Yahoo didn't list him in its top 300). Positions follow Yahoo's rule of 5 starts or 10 games at a position in 2026; pitchers are SP with 5+ starts
         and RP with 10+ relief appearances. Small sample = under 300 AB, or under 80 IP for starters and 40 IP for relievers.
       </p>

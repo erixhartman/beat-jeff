@@ -3,7 +3,7 @@
 Scores every 2026 MLB hitter (150+ AB) and pitcher (20+ IP) on this league's 12 categories.
 Each category is a z-score against a pool of roughly rosterable players; rate stats are scaled by
 playing time. Categories are weighted 0.5 + (correlation of that category's win rate with overall
-win rate, 2023-26). Output: ../public/data/values.json
+win rate, 2023-26). Hitters and pitchers share one rank via value above replacement. Output: ../public/data/values.json
 """
 import json, unicodedata, re, csv, statistics as st, collections
 
@@ -95,6 +95,15 @@ for _ in range(2):
 
 for x in H: x['pos'] = hitter_pos(x['id'])
 
+# One list for both: value above replacement. Replacement = the 156th hitter and 108th pitcher,
+# about what 12 teams roster (10 starting bats + 3 bench, 7 arms + 2 bench).
+REP_H, REP_P = 156, 108
+rh = sorted(H, key=lambda x: -x['value'])[REP_H - 1]['value']
+rp = sorted(P, key=lambda x: -x['value'])[REP_P - 1]['value']
+for x in H: x['var'] = round(x['value'] - rh, 2)
+for x in P: x['var'] = round(x['value'] - rp, 2)
+for i, x in enumerate(sorted(H + P, key=lambda x: -x['var']), 1): x['overall'] = i
+
 # ---------- outside ranks ----------
 nbc = {}
 for i, line in enumerate(open('ext/nbc_top150.txt'), 1):
@@ -131,8 +140,11 @@ def finish(lst, grp, top):
 data = {'asOf': '2026 regular season (MLB Stats API)', 'weights': W, 'corr': CORR,
         'hitters': finish(H, 'B', 250), 'pitchers': finish(P, 'P', 250)}
 # compact pool of everyone scored, for the draft board and trade checker
-data['pool'] = [{'name': ('Shohei Ohtani (Batter)' if 'Ohtani' in x['name'] else x['name']), 'g': 'B', 'pos': x['pos'], 'team': x['team'], 'value': x['value'], 'rank': x['rank'], 'z': x['z']} for x in H] + \
-               [{'name': ('Shohei Ohtani (Pitcher)' if 'Ohtani' in x['name'] else x['name']), 'g': 'P', 'pos': x['pos'], 'team': x['team'], 'value': x['value'], 'rank': x['rank'], 'z': x['z']} for x in P]
+data['pool'] = [{'name': ('Shohei Ohtani (Batter)' if 'Ohtani' in x['name'] else x['name']), 'g': 'B', 'pos': x['pos'], 'team': x['team'], 'value': x['value'], 'var': x['var'], 'rank': x['rank'], 'overall': x['overall'], 'z': x['z']} for x in H] + \
+               [{'name': ('Shohei Ohtani (Pitcher)' if 'Ohtani' in x['name'] else x['name']), 'g': 'P', 'pos': x['pos'], 'team': x['team'], 'value': x['value'], 'var': x['var'], 'rank': x['rank'], 'overall': x['overall'], 'z': x['z']} for x in P]
+# within the 500 shown (top 250 of each), rank 1-500
+shown = sorted(data['hitters'] + data['pitchers'], key=lambda r: -r['var'])
+for i, r in enumerate(shown, 1): r['overall'] = i
 import os; os.makedirs('../public/data', exist_ok=True)
 json.dump(data, open('../public/data/values.json', 'w'), separators=(',', ':'))
 print('hitters', len(data['hitters']), 'pitchers', len(data['pitchers']))

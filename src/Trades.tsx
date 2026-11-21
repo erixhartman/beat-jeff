@@ -28,7 +28,7 @@ function Picker({ label, chosen, setChosen, pool }: { label: string; chosen: Poo
             <tr key={p.g + p.name}>
               <td className="l name">{p.name}</td>
               <td className="l pos-chip">{p.pos.join(', ')}</td>
-              <td className="val">{p.value?.toFixed(1) ?? '–'}</td>
+              <td className="val">{p.var?.toFixed(1) ?? '–'}</td>
               <td><button className="btn small" onClick={() => setChosen(chosen.filter(x => x !== p))} aria-label={`Remove ${p.name}`}>Remove</button></td>
             </tr>
           ))}
@@ -47,13 +47,12 @@ export default function Trades() {
   const [who, setWho] = useState('Eric')
 
   if (!v || !lg) return <p>Loading…</p>
-  const sum = (ps: PoolPlayer[]) => ps.reduce((s, p) => s + (p.value ?? 0), 0)
+  const sum = (ps: PoolPlayer[]) => ps.reduce((s, p) => s + (p.var ?? 0), 0)
   const net = sum(get) - sum(give)
   const cats = [...HCATS, ...PCATS]
   const delta = Object.fromEntries(cats.map(c => [c, get.reduce((s, p) => s + (p.z?.[c] ?? 0), 0) - give.reduce((s, p) => s + (p.z?.[c] ?? 0), 0)]))
   const all = [...give.map(p => ({ p, side: 'give' })), ...get.map(p => ({ p, side: 'get' }))]
-  const best = all.sort((a, b) => (b.p.value ?? -99) - (a.p.value ?? -99))[0]
-  const mixed = new Set([...give, ...get].map(p => p.g)).size > 1
+  const best = all.sort((a, b) => (b.p.var ?? -99) - (a.p.var ?? -99))[0]
   const log = lg.trades.filter(t => who === 'All' || t.a === who || t.b === who).sort((x, y) => y.season - x.season)
   const people = ['All', ...Array.from(new Set(lg.trades.flatMap(t => [t.a, t.b]))).sort()]
 
@@ -74,7 +73,6 @@ export default function Trades() {
             {net >= 0 ? 'You gain' : 'You lose'} {Math.abs(net).toFixed(1)} in league value.
             {best && best.side === 'give' && <> The best player in this deal, {best.p.name}, is going the other way.</>}
           </p>
-          {mixed && <p className="note">Hitters and pitchers are scored on separate scales, so a hitter-for-pitcher total is only a rough guide. The category lines below are the better read.</p>}
           <div className="table-wrap">
             <table className="stats">
               <thead><tr>{cats.map(c => <th key={c}>{catLabel(c)}</th>)}</tr></thead>

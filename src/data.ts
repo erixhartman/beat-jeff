@@ -12,22 +12,22 @@ export interface Hitter {
   id: number; name: string; team: string; pos: string[]
   ab: number; pa: number; g: number; R: number; HR: number; RBI: number; SB: number
   AVG: number; OPS: number; OBP: number; SLG: number
-  z: Z; value: number; equal: number; rank: number; equalRank: number
+  z: Z; value: number; equal: number; rank: number; equalRank: number; var: number; overall: number
   nbc: number | null; yahoo: number | null; owner: string | null; small: boolean
 }
 export interface Pitcher {
   id: number; name: string; team: string; pos: string[]
   ip: number; ipDisp: string; W: number; SV: number; K: number; BB: number; HLD: number
   ERA: number; WHIP: number; KBB: number; gs: number; g: number
-  z: Z; value: number; equal: number; rank: number; equalRank: number
+  z: Z; value: number; equal: number; rank: number; equalRank: number; var: number; overall: number
   nbc: number | null; pl: number | null; yahoo: number | null; owner: string | null; small: boolean
 }
-export interface PoolPlayer { name: string; g: 'B' | 'P'; pos: string[]; team: string; value: number | null; rank: number | null; z: Z | null }
+export interface PoolPlayer { name: string; g: 'B' | 'P'; pos: string[]; team: string; value: number | null; var?: number; rank: number | null; overall?: number | null; z: Z | null }
 export interface Values {
   asOf: string; weights: Record<Cat, number>; corr: Record<Cat, number>
   hitters: Hitter[]; pitchers: Pitcher[]; pool: PoolPlayer[]
 }
-export interface BoardPlayer extends PoolPlayer { nbc?: number; pl?: number; est: number; estFrom: string }
+export interface BoardPlayer extends PoolPlayer { nbc?: number; pl?: number; est: number; estFrom: string; overall: number | null }
 
 export interface Season {
   season: number; team: string; finish: number; record: string
