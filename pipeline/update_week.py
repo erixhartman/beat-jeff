@@ -1,13 +1,14 @@
 """In-season refresh, run by .github/workflows/update.yml.
 
-1. Reads config.json. Until the 2027 league exists (league_id is null) it does nothing.
-2. Once set: pulls this week's matchup for Eric from the league's public Yahoo page, lists two-start pitchers
-   from MLB's probable pitchers, and appends finished weeks to data/weekly_stats_<season>.csv so the
-   Beat Jeff scoreboard keeps going. Public pages only; no logins, no keys.
+1. Finds the season's league on its own from the league's permanent Yahoo address, and does nothing until
+   Yahoo has renewed it and the draft is done. Eric's team is the one marked Commissioner; Jeff's is found by name.
+2. Then, every morning: this week's matchup for Eric, two-start pitchers from MLB's probables, and any newly
+   finished weeks appended to data/weekly_stats_<season>.csv. When a week finishes (Monday), it also rebuilds
+   the roto standings and extends the Beat Jeff scoreboard. Public pages only; no logins, no keys.
 """
 import csv, datetime, json, os, re, time, urllib.request
 from bs4 import BeautifulSoup
-import build_jeff
+import build_jeff, build_roto, collections
 
 UA = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130 Safari/537.36'}
 CATS = ['R', 'HR', 'RBI', 'SB', 'AVG', 'OPS', 'W', 'SV', 'K', 'ERA', 'WHIP', 'KBB']
@@ -20,6 +21,22 @@ def get(url):
     html = urllib.request.urlopen(req, timeout=60).read().decode('utf-8', 'replace')
     time.sleep(0.6)
     return html
+
+def find_league(slug, season):
+    ids = collections.Counter(re.findall(r'b1/(\d{3,8})', get(f'https://baseball.fantasysports.yahoo.com/league/{slug}/{season}')))
+    return int(ids.most_common(1)[0][0]) if ids else None
+
+
+def team_list(base):
+    out = {}
+    for tr in BeautifulSoup(get(base + '/teams'), 'html.parser').select('table tr'):
+        for a in tr.select('a[href*="/b1/"]'):
+            m = re.search(r'/b1/\d+/(\d{1,2})(?:$|[/?])', a['href'])
+            if m and a.get_text(strip=True):
+                out[int(m.group(1))] = {'name': a.get_text(strip=True), 'commissioner': 'Commissioner' in tr.get_text()}
+                break
+    return out
+
 
 def matchup_rows(html):
     s = BeautifulSoup(html, 'html.parser')
@@ -48,17 +65,24 @@ def two_starters():
 
 def main():
     cfg = json.load(open('config.json'))
-    if not cfg.get('league_id'):
-        print('preseason: league_id not set, nothing to do'); return
-
-    y, lid = cfg['season'], cfg['league_id']
+    y = cfg['season']
+    lid = cfg.get('league_id') or find_league(cfg['league_slug'], y)
+    if not lid:
+        print(f'waiting: Yahoo has not renewed the league for {y} yet'); return
     base = f'https://baseball.fantasysports.yahoo.com/{y}/b1/{lid}'
+    if len(re.findall(r'/mlb/players/\d+', get(base + '/draftresults'))) < 200:
+        print('waiting: the draft has not happened yet'); return
+    teams = team_list(base)
+    me_id = str(cfg.get('eric_team') or next((i for i, t in teams.items() if t['commissioner']), ''))
+    jeff_id = str(next((i for i, t in teams.items() if t['name'] == cfg['jeff_name']), cfg.get('jeff_team')))
+    cfg['eric_name'] = teams.get(int(me_id), {}).get('name') if me_id else None
+    cfg['jeff_name'] = teams.get(int(jeff_id), {}).get('name', cfg['jeff_name'])
     home = get(base)
     links = sorted(set(re.findall(r'matchup\?week=(\d+)&mid1=(\d+)&mid2=(\d+)', home)))
     if not links:
         print('no matchups listed yet'); return
     cur = max(int(w) for w, _, _ in links)
-    me, jeff = str(cfg['eric_team']), str(cfg['jeff_team'])
+    me = me_id
 
     # this week
     mine = next(((a, b) for w, a, b in links if int(w) == cur and me in (a, b)), None)
@@ -92,8 +116,10 @@ def main():
             if not exists: wr.writerow(['season', 'week', 'team', 'HAB', 'R', 'HR', 'RBI', 'SB', 'AVG', 'OPS', 'IP', 'W', 'SV', 'K', 'ERA', 'WHIP', 'KBB'])
             wr.writerows(new)
 
-    # rebuild jeff.json with this season added
-    if os.path.exists(path) and cfg.get('eric_name') and cfg.get('jeff_name'):
+    # a week finished: roto standings and the Beat Jeff scoreboard
+    if new and os.path.exists(path):
+        build_roto.build(path, y, set(range(1, cfg.get('regular_weeks', 22) + 1)))
+    if new and os.path.exists(path) and cfg.get('eric_name') and cfg.get('jeff_name'):
         past = build_jeff.build()
         reg = {y: set(range(1, cfg.get('regular_weeks', 22) + 1))}
         now = build_jeff.build(path, {y: cfg['eric_name']}, {y: cfg['jeff_name']}, reg)

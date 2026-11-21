@@ -6,6 +6,8 @@ import Scouting from './Scouting.tsx'
 import Trades from './Trades.tsx'
 import Week from './Week.tsx'
 import BeatJeff from './BeatJeff.tsx'
+import RotoTab from './Roto.tsx'
+import Memo from './Memo.tsx'
 
 const TABS = [
   { id: 'jeff', label: 'Beat Jeff', el: <BeatJeff /> },
@@ -14,7 +16,9 @@ const TABS = [
   { id: 'tendencies', label: 'How we draft', el: <Tendencies /> },
   { id: 'scouting', label: 'Scouting', el: <Scouting /> },
   { id: 'trades', label: 'Trades', el: <Trades /> },
+  { id: 'roto', label: 'Roto', el: <RotoTab /> },
   { id: 'week', label: 'This week', el: <Week /> },
+  { id: 'memo', label: 'Memo', el: <Memo /> },
 ]
 
 function current() {

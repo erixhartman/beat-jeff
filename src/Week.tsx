@@ -28,6 +28,14 @@ export default function Week() {
       </section>
     )
   }
+  if (!d.opponent) {
+    return (
+      <section>
+        <h2>This week</h2>
+        <p className="lede">No matchup for you this week{d.week ? ` (week ${d.week})` : ''}. If it's the playoffs, it's next year.</p>
+      </section>
+    )
+  }
   const rows = CATS.map(c => {
     const a = parseFloat(d.me?.[c] ?? ''), b = parseFloat(d.them?.[c] ?? '')
     const ahead = isFinite(a) && isFinite(b) ? (a === b ? 0 : (a > b) !== LOW.has(c) ? 1 : -1) : 0

@@ -12,7 +12,9 @@ A draft and season planner for Jeters Never Prosper, a 12-team Yahoo head-to-hea
 | How we draft | What this league takes in each round, what it returns, when the starter and closer runs begin, late steals and early busts. |
 | Scouting | One card per 2027 rival: finishes, draft habits, pickups, trade partners and weak categories. |
 | Trades | A trade checker in league terms, plus every trade since 2023. |
+| Roto | The league's what-if: standings as if we played rotisserie, every category ranked 1–12. Updated every Monday in season. |
 | This week | In season: this week's matchup, categories close enough to swing, and two-start pitchers. |
+| Memo | Eric's private Monday memo, read from a private repo with his GitHub token. [See a sample](https://beat-jeff.vercel.app/?demo#memo). |
 
 ## How the rankings work
 
@@ -40,7 +42,7 @@ python build_jeff.py     # Eric vs. Jeff weekly -> jeff.json
 
 ## In season
 
-`.github/workflows/update.yml` runs `pipeline/update_week.py` every morning. It does nothing until the 2027 league exists. Once Yahoo renews the league, set `league_id`, `eric_team` and `eric_name` in `pipeline/config.json`, and the workflow starts filling in This week and extending the Beat Jeff scoreboard. It only reads public pages; there are no logins or keys.
+`.github/workflows/update.yml` runs `pipeline/update_week.py` every morning. It finds the season's league on its own from the league's permanent Yahoo address and waits until Yahoo has renewed it and the draft is done. Eric's team is the one marked Commissioner. From then on it fills in This week daily, and each Monday it adds the finished week to the roto standings and the Beat Jeff scoreboard. It only reads public pages; there are no logins or keys. The private Monday memo runs separately in `erixhartman/beat-jeff-memo`.
 
 ## Run it locally
 
