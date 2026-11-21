@@ -1,0 +1,577 @@
+season,team,category,w_l_t
+2023,Semien Retention,R,14-6-3
+2023,Semien Retention,HR,4-12-7
+2023,Semien Retention,RBI,13-10-0
+2023,Semien Retention,SB,13-6-4
+2023,Semien Retention,AVG,13-10-0
+2023,Semien Retention,OPS,12-11-0
+2023,Loose Juice,R,11-10-2
+2023,Loose Juice,HR,12-7-4
+2023,Loose Juice,RBI,11-11-1
+2023,Loose Juice,SB,13-8-2
+2023,Loose Juice,AVG,10-13-0
+2023,Loose Juice,OPS,10-13-0
+2023,The Strahm Delusion,R,12-10-1
+2023,The Strahm Delusion,HR,12-10-1
+2023,The Strahm Delusion,RBI,13-10-0
+2023,The Strahm Delusion,SB,7-13-3
+2023,The Strahm Delusion,AVG,10-13-0
+2023,The Strahm Delusion,OPS,13-10-0
+2023,Eli's College Fund,R,6-18-0
+2023,Eli's College Fund,HR,8-15-1
+2023,Eli's College Fund,RBI,11-12-1
+2023,Eli's College Fund,SB,13-7-4
+2023,Eli's College Fund,AVG,11-13-0
+2023,Eli's College Fund,OPS,7-17-0
+2023,Home Run Furby,R,8-13-2
+2023,Home Run Furby,HR,5-12-6
+2023,Home Run Furby,RBI,8-15-0
+2023,Home Run Furby,SB,5-14-4
+2023,Home Run Furby,AVG,11-12-0
+2023,Home Run Furby,OPS,13-10-0
+2023,Offensive Indifference,R,8-15-0
+2023,Offensive Indifference,HR,13-8-2
+2023,Offensive Indifference,RBI,14-9-0
+2023,Offensive Indifference,SB,5-15-3
+2023,Offensive Indifference,AVG,11-12-0
+2023,Offensive Indifference,OPS,11-12-0
+2023,Operation Vamos,R,7-16-1
+2023,Operation Vamos,HR,6-16-2
+2023,Operation Vamos,RBI,8-15-1
+2023,Operation Vamos,SB,12-8-4
+2023,Operation Vamos,AVG,10-14-0
+2023,Operation Vamos,OPS,9-15-0
+2023,Scrap Heap Gold,R,13-10-1
+2023,Scrap Heap Gold,HR,14-6-4
+2023,Scrap Heap Gold,RBI,12-12-0
+2023,Scrap Heap Gold,SB,13-10-1
+2023,Scrap Heap Gold,AVG,11-13-0
+2023,Scrap Heap Gold,OPS,14-10-0
+2023,The Golden Sombreros,R,11-11-1
+2023,The Golden Sombreros,HR,10-11-2
+2023,The Golden Sombreros,RBI,13-10-0
+2023,The Golden Sombreros,SB,15-8-0
+2023,The Golden Sombreros,AVG,11-12-0
+2023,The Golden Sombreros,OPS,11-12-0
+2023,Winfield Wants Noise,R,18-6-0
+2023,Winfield Wants Noise,HR,17-5-2
+2023,Winfield Wants Noise,RBI,16-8-0
+2023,Winfield Wants Noise,SB,12-8-4
+2023,Winfield Wants Noise,AVG,16-8-0
+2023,Winfield Wants Noise,OPS,17-7-0
+2023,Gimme the Noot,R,13-9-1
+2023,Gimme the Noot,HR,8-14-1
+2023,Gimme the Noot,RBI,7-16-0
+2023,Gimme the Noot,SB,11-9-3
+2023,Gimme the Noot,AVG,14-9-0
+2023,Gimme the Noot,OPS,10-13-0
+2023,💜👶🏼 I’m a ⭐️💜,R,13-10-0
+2023,💜👶🏼 I’m a ⭐️💜,HR,15-8-0
+2023,💜👶🏼 I’m a ⭐️💜,RBI,12-10-1
+2023,💜👶🏼 I’m a ⭐️💜,SB,4-17-2
+2023,💜👶🏼 I’m a ⭐️💜,AVG,12-11-0
+2023,💜👶🏼 I’m a ⭐️💜,OPS,13-10-0
+2023,Semien Retention,W,11-8-4
+2023,Semien Retention,SV,12-8-3
+2023,Semien Retention,K,16-6-1
+2023,Semien Retention,ERA,11-12-0
+2023,Semien Retention,WHIP,9-14-0
+2023,Semien Retention,K/BB,11-12-0
+2023,Loose Juice,W,10-7-6
+2023,Loose Juice,SV,6-17-0
+2023,Loose Juice,K,13-9-1
+2023,Loose Juice,ERA,16-7-0
+2023,Loose Juice,WHIP,16-7-0
+2023,Loose Juice,K/BB,17-6-0
+2023,The Strahm Delusion,W,5-12-6
+2023,The Strahm Delusion,SV,12-9-2
+2023,The Strahm Delusion,K,8-15-0
+2023,The Strahm Delusion,ERA,10-13-0
+2023,The Strahm Delusion,WHIP,9-14-0
+2023,The Strahm Delusion,K/BB,5-18-0
+2023,Eli's College Fund,W,12-6-6
+2023,Eli's College Fund,SV,3-19-2
+2023,Eli's College Fund,K,13-11-0
+2023,Eli's College Fund,ERA,15-9-0
+2023,Eli's College Fund,WHIP,12-12-0
+2023,Eli's College Fund,K/BB,10-14-0
+2023,Home Run Furby,W,9-9-5
+2023,Home Run Furby,SV,15-4-4
+2023,Home Run Furby,K,6-16-1
+2023,Home Run Furby,ERA,16-7-0
+2023,Home Run Furby,WHIP,16-7-0
+2023,Home Run Furby,K/BB,16-7-0
+2023,Offensive Indifference,W,12-9-2
+2023,Offensive Indifference,SV,19-2-2
+2023,Offensive Indifference,K,12-10-1
+2023,Offensive Indifference,ERA,7-16-0
+2023,Offensive Indifference,WHIP,9-13-1
+2023,Offensive Indifference,K/BB,10-13-0
+2023,Operation Vamos,W,9-7-8
+2023,Operation Vamos,SV,15-7-2
+2023,Operation Vamos,K,10-13-1
+2023,Operation Vamos,ERA,12-12-0
+2023,Operation Vamos,WHIP,16-8-0
+2023,Operation Vamos,K/BB,15-9-0
+2023,Scrap Heap Gold,W,10-11-3
+2023,Scrap Heap Gold,SV,14-6-4
+2023,Scrap Heap Gold,K,13-10-1
+2023,Scrap Heap Gold,ERA,9-15-0
+2023,Scrap Heap Gold,WHIP,12-12-0
+2023,Scrap Heap Gold,K/BB,15-8-1
+2023,The Golden Sombreros,W,7-14-2
+2023,The Golden Sombreros,SV,7-11-5
+2023,The Golden Sombreros,K,13-9-1
+2023,The Golden Sombreros,ERA,14-9-0
+2023,The Golden Sombreros,WHIP,13-10-0
+2023,The Golden Sombreros,K/BB,12-10-1
+2023,Winfield Wants Noise,W,10-11-3
+2023,Winfield Wants Noise,SV,1-21-2
+2023,Winfield Wants Noise,K,15-9-0
+2023,Winfield Wants Noise,ERA,11-13-0
+2023,Winfield Wants Noise,WHIP,15-9-0
+2023,Winfield Wants Noise,K/BB,13-11-0
+2023,Gimme the Noot,W,9-9-5
+2023,Gimme the Noot,SV,8-12-3
+2023,Gimme the Noot,K,10-12-1
+2023,Gimme the Noot,ERA,6-17-0
+2023,Gimme the Noot,WHIP,5-17-1
+2023,Gimme the Noot,K/BB,9-14-0
+2023,💜👶🏼 I’m a ⭐️💜,W,8-9-6
+2023,💜👶🏼 I’m a ⭐️💜,SV,13-9-1
+2023,💜👶🏼 I’m a ⭐️💜,K,7-16-0
+2023,💜👶🏼 I’m a ⭐️💜,ERA,13-10-0
+2023,💜👶🏼 I’m a ⭐️💜,WHIP,7-16-0
+2023,💜👶🏼 I’m a ⭐️💜,K/BB,6-17-0
+2024,My Sweet Lourdes,R,11-11-1
+2024,My Sweet Lourdes,HR,9-13-1
+2024,My Sweet Lourdes,RBI,8-14-1
+2024,My Sweet Lourdes,SB,8-12-3
+2024,My Sweet Lourdes,AVG,11-12-0
+2024,My Sweet Lourdes,OPS,9-14-0
+2024,Eli's College Fund,R,9-13-1
+2024,Eli's College Fund,HR,11-11-1
+2024,Eli's College Fund,RBI,10-12-1
+2024,Eli's College Fund,SB,14-7-2
+2024,Eli's College Fund,AVG,15-8-0
+2024,Eli's College Fund,OPS,11-12-0
+2024,A Drive By Castellanos,R,11-12-0
+2024,A Drive By Castellanos,HR,12-11-0
+2024,A Drive By Castellanos,RBI,9-13-1
+2024,A Drive By Castellanos,SB,8-9-6
+2024,A Drive By Castellanos,AVG,11-12-0
+2024,A Drive By Castellanos,OPS,10-13-0
+2024,Westle Mania,R,9-14-0
+2024,Westle Mania,HR,10-11-2
+2024,Westle Mania,RBI,14-8-1
+2024,Westle Mania,SB,12-9-2
+2024,Westle Mania,AVG,9-14-0
+2024,Westle Mania,OPS,11-12-0
+2024,Kruk Yourself,R,11-12-1
+2024,Kruk Yourself,HR,9-15-0
+2024,Kruk Yourself,RBI,7-16-1
+2024,Kruk Yourself,SB,11-11-2
+2024,Kruk Yourself,AVG,10-14-0
+2024,Kruk Yourself,OPS,8-16-0
+2024,Operation Vamos,R,11-11-2
+2024,Operation Vamos,HR,11-12-1
+2024,Operation Vamos,RBI,10-12-2
+2024,Operation Vamos,SB,9-11-4
+2024,Operation Vamos,AVG,13-11-0
+2024,Operation Vamos,OPS,12-12-0
+2024,Scrap Heap Gold,R,15-6-2
+2024,Scrap Heap Gold,HR,13-9-1
+2024,Scrap Heap Gold,RBI,15-8-0
+2024,Scrap Heap Gold,SB,17-4-2
+2024,Scrap Heap Gold,AVG,11-12-0
+2024,Scrap Heap Gold,OPS,13-10-0
+2024,Golden Sombreros,R,11-10-2
+2024,Golden Sombreros,HR,13-7-3
+2024,Golden Sombreros,RBI,9-13-1
+2024,Golden Sombreros,SB,11-11-1
+2024,Golden Sombreros,AVG,11-12-0
+2024,Golden Sombreros,OPS,13-10-0
+2024,The Mendoza Line,R,10-10-4
+2024,The Mendoza Line,HR,10-13-1
+2024,The Mendoza Line,RBI,12-11-1
+2024,The Mendoza Line,SB,10-12-2
+2024,The Mendoza Line,AVG,11-13-0
+2024,The Mendoza Line,OPS,12-12-0
+2024,Winfield Wants Noise,R,13-8-3
+2024,Winfield Wants Noise,HR,14-7-3
+2024,Winfield Wants Noise,RBI,16-7-1
+2024,Winfield Wants Noise,SB,12-10-2
+2024,Winfield Wants Noise,AVG,15-9-0
+2024,Winfield Wants Noise,OPS,15-9-0
+2024,Hawks 26,R,5-16-2
+2024,Hawks 26,HR,7-13-3
+2024,Hawks 26,RBI,9-14-0
+2024,Hawks 26,SB,5-14-4
+2024,Hawks 26,AVG,11-12-0
+2024,Hawks 26,OPS,13-10-0
+2024,Ahh Puckett,R,14-7-2
+2024,Ahh Puckett,HR,12-9-2
+2024,Ahh Puckett,RBI,16-7-0
+2024,Ahh Puckett,SB,7-14-2
+2024,Ahh Puckett,AVG,12-11-0
+2024,Ahh Puckett,OPS,13-10-0
+2024,My Sweet Lourdes,W,9-11-3
+2024,My Sweet Lourdes,SV,10-10-3
+2024,My Sweet Lourdes,K,10-13-0
+2024,My Sweet Lourdes,ERA,10-13-0
+2024,My Sweet Lourdes,WHIP,12-11-0
+2024,My Sweet Lourdes,K/BB,10-13-0
+2024,Eli's College Fund,W,6-11-6
+2024,Eli's College Fund,SV,9-11-3
+2024,Eli's College Fund,K,11-12-0
+2024,Eli's College Fund,ERA,8-15-0
+2024,Eli's College Fund,WHIP,10-13-0
+2024,Eli's College Fund,K/BB,9-14-0
+2024,A Drive By Castellanos,W,8-6-9
+2024,A Drive By Castellanos,SV,11-8-4
+2024,A Drive By Castellanos,K,13-10-0
+2024,A Drive By Castellanos,ERA,11-12-0
+2024,A Drive By Castellanos,WHIP,7-16-0
+2024,A Drive By Castellanos,K/BB,9-14-0
+2024,Westle Mania,W,5-16-2
+2024,Westle Mania,SV,16-5-2
+2024,Westle Mania,K,5-18-0
+2024,Westle Mania,ERA,11-12-0
+2024,Westle Mania,WHIP,11-12-0
+2024,Westle Mania,K/BB,14-9-0
+2024,Kruk Yourself,W,9-13-2
+2024,Kruk Yourself,SV,4-15-5
+2024,Kruk Yourself,K,16-8-0
+2024,Kruk Yourself,ERA,13-11-0
+2024,Kruk Yourself,WHIP,13-11-0
+2024,Kruk Yourself,K/BB,9-15-0
+2024,Operation Vamos,W,11-9-4
+2024,Operation Vamos,SV,12-9-3
+2024,Operation Vamos,K,12-12-0
+2024,Operation Vamos,ERA,11-13-0
+2024,Operation Vamos,WHIP,12-12-0
+2024,Operation Vamos,K/BB,7-17-0
+2024,Scrap Heap Gold,W,10-8-5
+2024,Scrap Heap Gold,SV,14-4-5
+2024,Scrap Heap Gold,K,11-12-0
+2024,Scrap Heap Gold,ERA,9-14-0
+2024,Scrap Heap Gold,WHIP,13-10-0
+2024,Scrap Heap Gold,K/BB,13-10-0
+2024,Golden Sombreros,W,9-9-5
+2024,Golden Sombreros,SV,7-15-1
+2024,Golden Sombreros,K,13-10-0
+2024,Golden Sombreros,ERA,8-15-0
+2024,Golden Sombreros,WHIP,5-18-0
+2024,Golden Sombreros,K/BB,12-11-0
+2024,The Mendoza Line,W,8-10-6
+2024,The Mendoza Line,SV,12-8-4
+2024,The Mendoza Line,K,13-11-0
+2024,The Mendoza Line,ERA,15-9-0
+2024,The Mendoza Line,WHIP,16-8-0
+2024,The Mendoza Line,K/BB,19-5-0
+2024,Winfield Wants Noise,W,14-10-0
+2024,Winfield Wants Noise,SV,0-22-2
+2024,Winfield Wants Noise,K,17-7-0
+2024,Winfield Wants Noise,ERA,12-12-0
+2024,Winfield Wants Noise,WHIP,13-11-0
+2024,Winfield Wants Noise,K/BB,12-12-0
+2024,Hawks 26,W,12-8-3
+2024,Hawks 26,SV,16-2-5
+2024,Hawks 26,K,6-17-0
+2024,Hawks 26,ERA,15-8-0
+2024,Hawks 26,WHIP,15-8-0
+2024,Hawks 26,K/BB,14-9-0
+2024,Ahh Puckett,W,13-3-7
+2024,Ahh Puckett,SV,9-11-3
+2024,Ahh Puckett,K,13-10-0
+2024,Ahh Puckett,ERA,17-6-0
+2024,Ahh Puckett,WHIP,13-10-0
+2024,Ahh Puckett,K/BB,12-11-0
+2025,Make Em Say Uhh Suzuki,R,7-16-0
+2025,Make Em Say Uhh Suzuki,HR,6-13-4
+2025,Make Em Say Uhh Suzuki,RBI,8-14-1
+2025,Make Em Say Uhh Suzuki,SB,10-10-3
+2025,Make Em Say Uhh Suzuki,AVG,11-12-0
+2025,Make Em Say Uhh Suzuki,OPS,9-14-0
+2025,Ahh Puckett,R,13-10-0
+2025,Ahh Puckett,HR,12-8-3
+2025,Ahh Puckett,RBI,10-11-2
+2025,Ahh Puckett,SB,16-7-0
+2025,Ahh Puckett,AVG,10-13-0
+2025,Ahh Puckett,OPS,14-9-0
+2025,Eli's College Fund,R,11-9-4
+2025,Eli's College Fund,HR,15-6-3
+2025,Eli's College Fund,RBI,12-8-4
+2025,Eli's College Fund,SB,11-11-2
+2025,Eli's College Fund,AVG,7-17-0
+2025,Eli's College Fund,OPS,12-12-0
+2025,Golden Sombreros,R,11-12-0
+2025,Golden Sombreros,HR,9-14-0
+2025,Golden Sombreros,RBI,11-12-0
+2025,Golden Sombreros,SB,11-11-1
+2025,Golden Sombreros,AVG,9-14-0
+2025,Golden Sombreros,OPS,9-14-0
+2025,Hawks 26,R,8-15-0
+2025,Hawks 26,HR,9-12-2
+2025,Hawks 26,RBI,7-15-1
+2025,Hawks 26,SB,3-14-6
+2025,Hawks 26,AVG,9-14-0
+2025,Hawks 26,OPS,10-13-0
+2025,Operation Vamos,R,11-11-2
+2025,Operation Vamos,HR,13-9-2
+2025,Operation Vamos,RBI,13-8-3
+2025,Operation Vamos,SB,9-14-1
+2025,Operation Vamos,AVG,11-13-0
+2025,Operation Vamos,OPS,13-11-0
+2025,Scrap Heap Gold,R,10-11-2
+2025,Scrap Heap Gold,HR,12-8-3
+2025,Scrap Heap Gold,RBI,12-11-0
+2025,Scrap Heap Gold,SB,8-12-3
+2025,Scrap Heap Gold,AVG,13-10-0
+2025,Scrap Heap Gold,OPS,14-9-0
+2025,The Mets Suck Ass,R,11-13-0
+2025,The Mets Suck Ass,HR,9-13-2
+2025,The Mets Suck Ass,RBI,10-13-1
+2025,The Mets Suck Ass,SB,13-8-3
+2025,The Mets Suck Ass,AVG,13-10-1
+2025,The Mets Suck Ass,OPS,9-15-0
+2025,Home Run Furby,R,14-9-1
+2025,Home Run Furby,HR,12-9-3
+2025,Home Run Furby,RBI,14-8-2
+2025,Home Run Furby,SB,13-10-1
+2025,Home Run Furby,AVG,15-8-1
+2025,Home Run Furby,OPS,13-11-0
+2025,Winfield Wants Noise,R,15-7-1
+2025,Winfield Wants Noise,HR,10-12-1
+2025,Winfield Wants Noise,RBI,13-7-3
+2025,Winfield Wants Noise,SB,14-8-1
+2025,Winfield Wants Noise,AVG,16-7-0
+2025,Winfield Wants Noise,OPS,14-9-0
+2025,O.M.G.,R,10-13-0
+2025,O.M.G.,HR,9-13-1
+2025,O.M.G.,RBI,12-11-0
+2025,O.M.G.,SB,8-14-1
+2025,O.M.G.,AVG,11-12-0
+2025,O.M.G.,OPS,10-13-0
+2025,Let Bygones Be Bygones,R,14-9-0
+2025,Let Bygones Be Bygones,HR,11-10-2
+2025,Let Bygones Be Bygones,RBI,9-13-1
+2025,Let Bygones Be Bygones,SB,12-9-2
+2025,Let Bygones Be Bygones,AVG,14-9-0
+2025,Let Bygones Be Bygones,OPS,13-10-0
+2025,Make Em Say Uhh Suzuki,W,14-5-4
+2025,Make Em Say Uhh Suzuki,SV,13-9-1
+2025,Make Em Say Uhh Suzuki,K,15-8-0
+2025,Make Em Say Uhh Suzuki,ERA,8-15-0
+2025,Make Em Say Uhh Suzuki,WHIP,12-11-0
+2025,Make Em Say Uhh Suzuki,K/BB,14-9-0
+2025,Ahh Puckett,W,11-9-3
+2025,Ahh Puckett,SV,19-4-0
+2025,Ahh Puckett,K,12-11-0
+2025,Ahh Puckett,ERA,14-9-0
+2025,Ahh Puckett,WHIP,16-7-0
+2025,Ahh Puckett,K/BB,12-11-0
+2025,Eli's College Fund,W,14-9-1
+2025,Eli's College Fund,SV,6-13-5
+2025,Eli's College Fund,K,15-8-1
+2025,Eli's College Fund,ERA,13-11-0
+2025,Eli's College Fund,WHIP,12-12-0
+2025,Eli's College Fund,K/BB,15-9-0
+2025,Golden Sombreros,W,10-10-3
+2025,Golden Sombreros,SV,12-7-4
+2025,Golden Sombreros,K,11-12-0
+2025,Golden Sombreros,ERA,10-13-0
+2025,Golden Sombreros,WHIP,6-17-0
+2025,Golden Sombreros,K/BB,8-15-0
+2025,Hawks 26,W,6-11-6
+2025,Hawks 26,SV,15-4-4
+2025,Hawks 26,K,7-16-0
+2025,Hawks 26,ERA,13-10-0
+2025,Hawks 26,WHIP,12-11-0
+2025,Hawks 26,K/BB,15-8-0
+2025,Operation Vamos,W,10-12-2
+2025,Operation Vamos,SV,10-10-4
+2025,Operation Vamos,K,6-18-0
+2025,Operation Vamos,ERA,10-14-0
+2025,Operation Vamos,WHIP,10-14-0
+2025,Operation Vamos,K/BB,10-14-0
+2025,Scrap Heap Gold,W,8-13-2
+2025,Scrap Heap Gold,SV,14-8-1
+2025,Scrap Heap Gold,K,8-15-0
+2025,Scrap Heap Gold,ERA,13-10-0
+2025,Scrap Heap Gold,WHIP,13-10-0
+2025,Scrap Heap Gold,K/BB,12-11-0
+2025,The Mets Suck Ass,W,5-13-6
+2025,The Mets Suck Ass,SV,7-11-6
+2025,The Mets Suck Ass,K,11-13-0
+2025,The Mets Suck Ass,ERA,8-16-0
+2025,The Mets Suck Ass,WHIP,10-14-0
+2025,The Mets Suck Ass,K/BB,14-10-0
+2025,Home Run Furby,W,7-14-3
+2025,Home Run Furby,SV,15-9-0
+2025,Home Run Furby,K,10-14-0
+2025,Home Run Furby,ERA,14-10-0
+2025,Home Run Furby,WHIP,15-9-0
+2025,Home Run Furby,K/BB,13-11-0
+2025,Winfield Wants Noise,W,14-6-3
+2025,Winfield Wants Noise,SV,1-19-3
+2025,Winfield Wants Noise,K,20-3-0
+2025,Winfield Wants Noise,ERA,13-10-0
+2025,Winfield Wants Noise,WHIP,13-10-0
+2025,Winfield Wants Noise,K/BB,11-12-0
+2025,O.M.G.,W,15-5-3
+2025,O.M.G.,SV,0-22-1
+2025,O.M.G.,K,12-11-0
+2025,O.M.G.,ERA,14-9-0
+2025,O.M.G.,WHIP,11-12-0
+2025,O.M.G.,K/BB,10-13-0
+2025,Let Bygones Be Bygones,W,7-14-2
+2025,Let Bygones Be Bygones,SV,12-8-3
+2025,Let Bygones Be Bygones,K,12-10-1
+2025,Let Bygones Be Bygones,ERA,10-13-0
+2025,Let Bygones Be Bygones,WHIP,10-13-0
+2025,Let Bygones Be Bygones,K/BB,6-17-0
+2026,Bury my Bats at Wounded Knee,R,9-14-1
+2026,Bury my Bats at Wounded Knee,HR,8-15-1
+2026,Bury my Bats at Wounded Knee,RBI,9-14-1
+2026,Bury my Bats at Wounded Knee,SB,9-11-4
+2026,Bury my Bats at Wounded Knee,AVG,11-13-0
+2026,Bury my Bats at Wounded Knee,OPS,10-14-0
+2026,Ahh Puckett,R,12-12-1
+2026,Ahh Puckett,HR,12-11-2
+2026,Ahh Puckett,RBI,11-14-0
+2026,Ahh Puckett,SB,4-12-9
+2026,Ahh Puckett,AVG,12-13-0
+2026,Ahh Puckett,OPS,12-13-0
+2026,Eli's College Fund,R,14-8-2
+2026,Eli's College Fund,HR,10-11-3
+2026,Eli's College Fund,RBI,13-8-3
+2026,Eli's College Fund,SB,20-3-1
+2026,Eli's College Fund,AVG,13-11-0
+2026,Eli's College Fund,OPS,14-10-0
+2026,Golden Sombreros,R,9-12-3
+2026,Golden Sombreros,HR,8-14-2
+2026,Golden Sombreros,RBI,8-15-1
+2026,Golden Sombreros,SB,11-10-3
+2026,Golden Sombreros,AVG,11-13-0
+2026,Golden Sombreros,OPS,11-13-0
+2026,Hawks 26,R,11-14-0
+2026,Hawks 26,HR,9-13-3
+2026,Hawks 26,RBI,11-12-2
+2026,Hawks 26,SB,7-16-2
+2026,Hawks 26,AVG,12-13-0
+2026,Hawks 26,OPS,8-17-0
+2026,Home Run Furby,R,12-9-3
+2026,Home Run Furby,HR,13-10-1
+2026,Home Run Furby,RBI,13-10-1
+2026,Home Run Furby,SB,14-6-4
+2026,Home Run Furby,AVG,18-6-0
+2026,Home Run Furby,OPS,14-10-0
+2026,Julio Down by the Schoolyard,R,9-13-2
+2026,Julio Down by the Schoolyard,HR,19-5-0
+2026,Julio Down by the Schoolyard,RBI,18-5-1
+2026,Julio Down by the Schoolyard,SB,5-16-3
+2026,Julio Down by the Schoolyard,AVG,14-10-0
+2026,Julio Down by the Schoolyard,OPS,15-9-0
+2026,O.M.G.,R,12-11-1
+2026,O.M.G.,HR,10-11-3
+2026,O.M.G.,RBI,10-12-2
+2026,O.M.G.,SB,15-6-3
+2026,O.M.G.,AVG,15-9-0
+2026,O.M.G.,OPS,15-9-0
+2026,Operation Vamos,R,10-14-0
+2026,Operation Vamos,HR,11-12-1
+2026,Operation Vamos,RBI,12-12-0
+2026,Operation Vamos,SB,11-12-1
+2026,Operation Vamos,AVG,8-16-0
+2026,Operation Vamos,OPS,11-13-0
+2026,Scrap Heap Gold,R,11-13-1
+2026,Scrap Heap Gold,HR,11-10-4
+2026,Scrap Heap Gold,RBI,10-15-0
+2026,Scrap Heap Gold,SB,11-13-1
+2026,Scrap Heap Gold,AVG,12-13-0
+2026,Scrap Heap Gold,OPS,13-12-0
+2026,Ass in the Jackpot,R,9-13-2
+2026,Ass in the Jackpot,HR,7-15-2
+2026,Ass in the Jackpot,RBI,13-11-0
+2026,Ass in the Jackpot,SB,8-11-5
+2026,Ass in the Jackpot,AVG,9-15-0
+2026,Ass in the Jackpot,OPS,10-14-0
+2026,Winfield Wants Noise,R,20-5-0
+2026,Winfield Wants Noise,HR,16-7-2
+2026,Winfield Wants Noise,RBI,11-11-3
+2026,Winfield Wants Noise,SB,12-11-2
+2026,Winfield Wants Noise,AVG,11-14-0
+2026,Winfield Wants Noise,OPS,13-12-0
+2026,Bury my Bats at Wounded Knee,W,12-7-5
+2026,Bury my Bats at Wounded Knee,SV,18-5-1
+2026,Bury my Bats at Wounded Knee,K,10-14-0
+2026,Bury my Bats at Wounded Knee,ERA,18-6-0
+2026,Bury my Bats at Wounded Knee,WHIP,14-10-0
+2026,Bury my Bats at Wounded Knee,K/BB,12-12-0
+2026,Ahh Puckett,W,8-14-3
+2026,Ahh Puckett,SV,14-7-4
+2026,Ahh Puckett,K,13-11-1
+2026,Ahh Puckett,ERA,13-12-0
+2026,Ahh Puckett,WHIP,9-16-0
+2026,Ahh Puckett,K/BB,15-10-0
+2026,Eli's College Fund,W,13-9-2
+2026,Eli's College Fund,SV,7-14-3
+2026,Eli's College Fund,K,11-12-1
+2026,Eli's College Fund,ERA,12-12-0
+2026,Eli's College Fund,WHIP,13-11-0
+2026,Eli's College Fund,K/BB,9-15-0
+2026,Golden Sombreros,W,13-8-3
+2026,Golden Sombreros,SV,11-8-5
+2026,Golden Sombreros,K,12-12-0
+2026,Golden Sombreros,ERA,9-15-0
+2026,Golden Sombreros,WHIP,12-12-0
+2026,Golden Sombreros,K/BB,13-11-0
+2026,Hawks 26,W,8-15-2
+2026,Hawks 26,SV,10-11-4
+2026,Hawks 26,K,13-12-0
+2026,Hawks 26,ERA,7-18-0
+2026,Hawks 26,WHIP,5-20-0
+2026,Hawks 26,K/BB,10-15-0
+2026,Home Run Furby,W,7-10-7
+2026,Home Run Furby,SV,18-4-2
+2026,Home Run Furby,K,6-17-1
+2026,Home Run Furby,ERA,10-14-0
+2026,Home Run Furby,WHIP,12-12-0
+2026,Home Run Furby,K/BB,14-9-1
+2026,Julio Down by the Schoolyard,W,8-11-5
+2026,Julio Down by the Schoolyard,SV,8-11-5
+2026,Julio Down by the Schoolyard,K,14-10-0
+2026,Julio Down by the Schoolyard,ERA,13-11-0
+2026,Julio Down by the Schoolyard,WHIP,11-13-0
+2026,Julio Down by the Schoolyard,K/BB,13-11-0
+2026,O.M.G.,W,9-12-3
+2026,O.M.G.,SV,0-20-4
+2026,O.M.G.,K,14-10-0
+2026,O.M.G.,ERA,10-14-0
+2026,O.M.G.,WHIP,13-11-0
+2026,O.M.G.,K/BB,12-12-0
+2026,Operation Vamos,W,11-5-8
+2026,Operation Vamos,SV,10-10-4
+2026,Operation Vamos,K,13-10-1
+2026,Operation Vamos,ERA,18-6-0
+2026,Operation Vamos,WHIP,16-8-0
+2026,Operation Vamos,K/BB,10-14-0
+2026,Scrap Heap Gold,W,9-8-8
+2026,Scrap Heap Gold,SV,15-6-4
+2026,Scrap Heap Gold,K,11-14-0
+2026,Scrap Heap Gold,ERA,14-11-0
+2026,Scrap Heap Gold,WHIP,19-6-0
+2026,Scrap Heap Gold,K/BB,11-14-0
+2026,Ass in the Jackpot,W,9-11-4
+2026,Ass in the Jackpot,SV,12-9-3
+2026,Ass in the Jackpot,K,10-14-0
+2026,Ass in the Jackpot,ERA,9-15-0
+2026,Ass in the Jackpot,WHIP,11-13-0
+2026,Ass in the Jackpot,K/BB,12-11-1
+2026,Winfield Wants Noise,W,13-10-2
+2026,Winfield Wants Noise,SV,2-20-3
+2026,Winfield Wants Noise,K,17-8-0
+2026,Winfield Wants Noise,ERA,13-12-0
+2026,Winfield Wants Noise,WHIP,11-14-0
+2026,Winfield Wants Noise,K/BB,14-11-0

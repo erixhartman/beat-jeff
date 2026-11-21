@@ -1,0 +1,35 @@
+name: Update this week
+
+# Every morning during the season: refresh this week's matchup, two-start pitchers and the Beat Jeff scoreboard.
+# Before the 2027 league exists (pipeline/config.json league_id is null) it exits without changing anything.
+on:
+  schedule:
+    - cron: '17 11 * * *'   # about 6:17 a.m. Toronto
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - name: Refresh data
+        working-directory: pipeline
+        run: python update_week.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "Eric Hartman (Beat Jeff bot)"
+          git config user.email "erixhartman@users.noreply.github.com"
+          git add public/data pipeline/data
+          git diff --cached --quiet || (git commit -m "Update week data" && git push)

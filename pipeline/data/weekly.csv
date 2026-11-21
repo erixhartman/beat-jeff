@@ -1,0 +1,567 @@
+season,week,bracket,team1,score1,score2,team2
+2023,1,Regular season,Semien Retention,11,1,The Strahm Delusion
+2023,1,Regular season,Loose Juice,7,4,Offensive Indifference
+2023,1,Regular season,Eli's College Fund,5,6,Winfield Wants Noise
+2023,1,Regular season,Home Run Furby,7,2,Operation Vamos
+2023,1,Regular season,Scrap Heap Gold,10,2,Gimme the Noot
+2023,1,Regular season,The Golden Sombreros,6,6,💜👶🏼 I’m a ⭐️💜
+2023,2,Regular season,Semien Retention,5,6,Operation Vamos
+2023,2,Regular season,Loose Juice,8,3,Scrap Heap Gold
+2023,2,Regular season,The Strahm Delusion,8,4,Eli's College Fund
+2023,2,Regular season,Home Run Furby,2,8,Gimme the Noot
+2023,2,Regular season,Offensive Indifference,10,2,💜👶🏼 I’m a ⭐️💜
+2023,2,Regular season,The Golden Sombreros,7,3,Winfield Wants Noise
+2023,3,Regular season,Semien Retention,8,3,Home Run Furby
+2023,3,Regular season,Loose Juice,6,6,Gimme the Noot
+2023,3,Regular season,The Strahm Delusion,1,11,The Golden Sombreros
+2023,3,Regular season,Eli's College Fund,2,9,Operation Vamos
+2023,3,Regular season,Offensive Indifference,7,5,Winfield Wants Noise
+2023,3,Regular season,Scrap Heap Gold,6,5,💜👶🏼 I’m a ⭐️💜
+2023,4,Regular season,Semien Retention,6,6,Gimme the Noot
+2023,4,Regular season,Loose Juice,11,0,💜👶🏼 I’m a ⭐️💜
+2023,4,Regular season,The Strahm Delusion,6,5,Offensive Indifference
+2023,4,Regular season,Eli's College Fund,5,7,Home Run Furby
+2023,4,Regular season,Operation Vamos,5,7,The Golden Sombreros
+2023,4,Regular season,Scrap Heap Gold,10,2,Winfield Wants Noise
+2023,5,Regular season,Semien Retention,7,3,Eli's College Fund
+2023,5,Regular season,Loose Juice,8,4,Winfield Wants Noise
+2023,5,Regular season,The Strahm Delusion,7,4,Scrap Heap Gold
+2023,5,Regular season,Home Run Furby,4,6,The Golden Sombreros
+2023,5,Regular season,Offensive Indifference,5,7,Operation Vamos
+2023,5,Regular season,Gimme the Noot,1,10,💜👶🏼 I’m a ⭐️💜
+2023,6,Regular season,Semien Retention,7,3,The Golden Sombreros
+2023,6,Regular season,Loose Juice,6,5,The Strahm Delusion
+2023,6,Regular season,Eli's College Fund,8,3,Gimme the Noot
+2023,6,Regular season,Home Run Furby,6,3,Offensive Indifference
+2023,6,Regular season,Operation Vamos,1,11,Scrap Heap Gold
+2023,6,Regular season,Winfield Wants Noise,9,3,💜👶🏼 I’m a ⭐️💜
+2023,7,Regular season,Semien Retention,9,2,Offensive Indifference
+2023,7,Regular season,Loose Juice,9,2,Operation Vamos
+2023,7,Regular season,The Strahm Delusion,4,8,💜👶🏼 I’m a ⭐️💜
+2023,7,Regular season,Eli's College Fund,3,8,The Golden Sombreros
+2023,7,Regular season,Home Run Furby,8,3,Scrap Heap Gold
+2023,7,Regular season,Winfield Wants Noise,8,4,Gimme the Noot
+2023,8,Regular season,Semien Retention,8,3,Scrap Heap Gold
+2023,8,Regular season,Loose Juice,3,8,Home Run Furby
+2023,8,Regular season,The Strahm Delusion,2,9,Winfield Wants Noise
+2023,8,Regular season,Eli's College Fund,6,6,Offensive Indifference
+2023,8,Regular season,Operation Vamos,3,8,💜👶🏼 I’m a ⭐️💜
+2023,8,Regular season,The Golden Sombreros,7,4,Gimme the Noot
+2023,9,Regular season,Semien Retention,7,4,Loose Juice
+2023,9,Regular season,The Strahm Delusion,5,7,Gimme the Noot
+2023,9,Regular season,Eli's College Fund,8,4,Scrap Heap Gold
+2023,9,Regular season,Home Run Furby,6,6,💜👶🏼 I’m a ⭐️💜
+2023,9,Regular season,Offensive Indifference,7,5,The Golden Sombreros
+2023,9,Regular season,Operation Vamos,5,6,Winfield Wants Noise
+2023,10,Regular season,Semien Retention,6,5,💜👶🏼 I’m a ⭐️💜
+2023,10,Regular season,Loose Juice,4,7,Eli's College Fund
+2023,10,Regular season,The Strahm Delusion,5,6,Operation Vamos
+2023,10,Regular season,Home Run Furby,6,5,Winfield Wants Noise
+2023,10,Regular season,Offensive Indifference,2,8,Gimme the Noot
+2023,10,Regular season,Scrap Heap Gold,9,1,The Golden Sombreros
+2023,11,Regular season,Semien Retention,6,5,Winfield Wants Noise
+2023,11,Regular season,Loose Juice,5,6,The Golden Sombreros
+2023,11,Regular season,The Strahm Delusion,2,8,Home Run Furby
+2023,11,Regular season,Eli's College Fund,6,6,💜👶🏼 I’m a ⭐️💜
+2023,11,Regular season,Offensive Indifference,7,5,Scrap Heap Gold
+2023,11,Regular season,Operation Vamos,5,7,Gimme the Noot
+2023,12,Regular season,Semien Retention,6,6,The Strahm Delusion
+2023,12,Regular season,Loose Juice,9,2,Offensive Indifference
+2023,12,Regular season,Eli's College Fund,10,2,Winfield Wants Noise
+2023,12,Regular season,Home Run Furby,8,3,Operation Vamos
+2023,12,Regular season,Scrap Heap Gold,7,4,Gimme the Noot
+2023,12,Regular season,The Golden Sombreros,7,5,💜👶🏼 I’m a ⭐️💜
+2023,13,Regular season,Semien Retention,6,4,Operation Vamos
+2023,13,Regular season,Loose Juice,10,2,Scrap Heap Gold
+2023,13,Regular season,The Strahm Delusion,8,3,Eli's College Fund
+2023,13,Regular season,Home Run Furby,5,6,Gimme the Noot
+2023,13,Regular season,Offensive Indifference,8,4,💜👶🏼 I’m a ⭐️💜
+2023,13,Regular season,The Golden Sombreros,4,8,Winfield Wants Noise
+2023,14,Regular season,Semien Retention,4,8,Home Run Furby
+2023,14,Regular season,Loose Juice,5,6,Gimme the Noot
+2023,14,Regular season,The Strahm Delusion,8,4,The Golden Sombreros
+2023,14,Regular season,Eli's College Fund,2,10,Operation Vamos
+2023,14,Regular season,Offensive Indifference,3,9,Winfield Wants Noise
+2023,14,Regular season,Scrap Heap Gold,7,5,💜👶🏼 I’m a ⭐️💜
+2023,15,Regular season,Semien Retention,6,5,Gimme the Noot
+2023,15,Regular season,Loose Juice,5,6,💜👶🏼 I’m a ⭐️💜
+2023,15,Regular season,The Strahm Delusion,8,4,Offensive Indifference
+2023,15,Regular season,Eli's College Fund,3,8,Home Run Furby
+2023,15,Regular season,Operation Vamos,8,4,The Golden Sombreros
+2023,15,Regular season,Scrap Heap Gold,10,2,Winfield Wants Noise
+2023,16,Regular season,Semien Retention,4,5,Eli's College Fund
+2023,16,Regular season,Loose Juice,6,4,Winfield Wants Noise
+2023,16,Regular season,The Strahm Delusion,6,4,Scrap Heap Gold
+2023,16,Regular season,Home Run Furby,2,10,The Golden Sombreros
+2023,16,Regular season,Offensive Indifference,8,2,Operation Vamos
+2023,16,Regular season,Gimme the Noot,2,9,💜👶🏼 I’m a ⭐️💜
+2023,17,Regular season,Semien Retention,4,8,The Golden Sombreros
+2023,17,Regular season,Loose Juice,6,6,The Strahm Delusion
+2023,17,Regular season,Eli's College Fund,4,8,Gimme the Noot
+2023,17,Regular season,Home Run Furby,6,6,Offensive Indifference
+2023,17,Regular season,Operation Vamos,5,7,Scrap Heap Gold
+2023,17,Regular season,Winfield Wants Noise,7,5,💜👶🏼 I’m a ⭐️💜
+2023,18,Regular season,Semien Retention,4,8,Offensive Indifference
+2023,18,Regular season,Loose Juice,6,6,Operation Vamos
+2023,18,Regular season,The Strahm Delusion,4,8,💜👶🏼 I’m a ⭐️💜
+2023,18,Regular season,Eli's College Fund,4,8,The Golden Sombreros
+2023,18,Regular season,Home Run Furby,7,4,Scrap Heap Gold
+2023,18,Regular season,Winfield Wants Noise,6,5,Gimme the Noot
+2023,19,Regular season,Semien Retention,7,3,Scrap Heap Gold
+2023,19,Regular season,Loose Juice,7,4,Home Run Furby
+2023,19,Regular season,The Strahm Delusion,3,9,Winfield Wants Noise
+2023,19,Regular season,Eli's College Fund,6,6,Offensive Indifference
+2023,19,Regular season,Operation Vamos,4,7,💜👶🏼 I’m a ⭐️💜
+2023,19,Regular season,The Golden Sombreros,9,3,Gimme the Noot
+2023,20,Regular season,Semien Retention,7,4,Loose Juice
+2023,20,Regular season,The Strahm Delusion,6,6,Gimme the Noot
+2023,20,Regular season,Eli's College Fund,6,6,Scrap Heap Gold
+2023,20,Regular season,Home Run Furby,8,4,💜👶🏼 I’m a ⭐️💜
+2023,20,Regular season,Offensive Indifference,7,5,The Golden Sombreros
+2023,20,Regular season,Operation Vamos,1,11,Winfield Wants Noise
+2023,21,Regular season,Semien Retention,6,5,💜👶🏼 I’m a ⭐️💜
+2023,21,Regular season,Loose Juice,7,5,Eli's College Fund
+2023,21,Regular season,The Strahm Delusion,4,7,Operation Vamos
+2023,21,Regular season,Home Run Furby,1,11,Winfield Wants Noise
+2023,21,Regular season,Offensive Indifference,8,4,Gimme the Noot
+2023,21,Regular season,Scrap Heap Gold,8,3,The Golden Sombreros
+2023,22,Championship Bracket,Home Run Furby,2,9,Winfield Wants Noise
+2023,22,Championship Bracket,Scrap Heap Gold,12,0,The Golden Sombreros
+2023,22,Consolation Bracket,The Strahm Delusion,5,6,Eli's College Fund
+2023,22,Consolation Bracket,Operation Vamos,11,0,Gimme the Noot
+2023,23,Championship Bracket,Semien Retention,0,11,Scrap Heap Gold
+2023,23,Championship Bracket,Loose Juice,2,10,Winfield Wants Noise
+2023,23,Consolation Bracket,The Strahm Delusion,6,5,Gimme the Noot
+2023,23,Consolation Bracket,Eli's College Fund,7,5,Offensive Indifference
+2023,23,Consolation Bracket,Home Run Furby,4,8,The Golden Sombreros
+2023,23,Consolation Bracket,Operation Vamos,9,2,💜👶🏼 I’m a ⭐️💜
+2023,24,Championship Bracket,Scrap Heap Gold,1,11,Winfield Wants Noise
+2023,24,Consolation Bracket,Semien Retention,5,7,Loose Juice
+2023,24,Consolation Bracket,Eli's College Fund,3,8,Operation Vamos
+2023,24,Consolation Bracket,Offensive Indifference,8,4,💜👶🏼 I’m a ⭐️💜
+2024,1,Regular season,My Sweet Lourdes,7,3,Operation Vamos
+2024,1,Regular season,Eli's College Fund,10,1,A Drive By Castellanos
+2024,1,Regular season,Westle Mania,6,6,Winfield Wants Noise
+2024,1,Regular season,Kruk Yourself,3,8,Hawks 26
+2024,1,Regular season,Scrap Heap Gold,5,6,Ahh Puckett
+2024,1,Regular season,Golden Sombreros,7,4,The Mendoza Line
+2024,2,Regular season,My Sweet Lourdes,3,8,The Mendoza Line
+2024,2,Regular season,Eli's College Fund,3,9,Westle Mania
+2024,2,Regular season,A Drive By Castellanos,5,6,Scrap Heap Gold
+2024,2,Regular season,Kruk Yourself,1,10,Winfield Wants Noise
+2024,2,Regular season,Operation Vamos,9,3,Ahh Puckett
+2024,2,Regular season,Golden Sombreros,2,10,Hawks 26
+2024,3,Regular season,My Sweet Lourdes,7,4,Hawks 26
+2024,3,Regular season,Eli's College Fund,2,10,Winfield Wants Noise
+2024,3,Regular season,A Drive By Castellanos,12,0,Operation Vamos
+2024,3,Regular season,Westle Mania,10,2,Scrap Heap Gold
+2024,3,Regular season,Kruk Yourself,8,3,Golden Sombreros
+2024,3,Regular season,The Mendoza Line,6,5,Ahh Puckett
+2024,4,Regular season,My Sweet Lourdes,5,7,Golden Sombreros
+2024,4,Regular season,Eli's College Fund,6,5,Kruk Yourself
+2024,4,Regular season,A Drive By Castellanos,3,8,The Mendoza Line
+2024,4,Regular season,Westle Mania,9,3,Operation Vamos
+2024,4,Regular season,Scrap Heap Gold,5,6,Winfield Wants Noise
+2024,4,Regular season,Hawks 26,5,7,Ahh Puckett
+2024,5,Regular season,My Sweet Lourdes,8,4,Kruk Yourself
+2024,5,Regular season,Eli's College Fund,9,3,Scrap Heap Gold
+2024,5,Regular season,A Drive By Castellanos,4,6,Hawks 26
+2024,5,Regular season,Westle Mania,3,8,The Mendoza Line
+2024,5,Regular season,Operation Vamos,3,9,Winfield Wants Noise
+2024,5,Regular season,Golden Sombreros,3,9,Ahh Puckett
+2024,6,Regular season,My Sweet Lourdes,4,8,Ahh Puckett
+2024,6,Regular season,Eli's College Fund,7,5,Operation Vamos
+2024,6,Regular season,A Drive By Castellanos,8,3,Golden Sombreros
+2024,6,Regular season,Westle Mania,2,10,Hawks 26
+2024,6,Regular season,Kruk Yourself,4,7,Scrap Heap Gold
+2024,6,Regular season,The Mendoza Line,7,4,Winfield Wants Noise
+2024,7,Regular season,My Sweet Lourdes,2,9,A Drive By Castellanos
+2024,7,Regular season,Eli's College Fund,2,7,The Mendoza Line
+2024,7,Regular season,Westle Mania,8,4,Golden Sombreros
+2024,7,Regular season,Kruk Yourself,7,3,Ahh Puckett
+2024,7,Regular season,Operation Vamos,3,8,Scrap Heap Gold
+2024,7,Regular season,Winfield Wants Noise,9,2,Hawks 26
+2024,8,Regular season,My Sweet Lourdes,8,4,Westle Mania
+2024,8,Regular season,Eli's College Fund,4,8,Hawks 26
+2024,8,Regular season,A Drive By Castellanos,2,7,Ahh Puckett
+2024,8,Regular season,Kruk Yourself,5,7,Operation Vamos
+2024,8,Regular season,Scrap Heap Gold,7,5,The Mendoza Line
+2024,8,Regular season,Golden Sombreros,6,5,Winfield Wants Noise
+2024,9,Regular season,My Sweet Lourdes,6,6,Winfield Wants Noise
+2024,9,Regular season,Eli's College Fund,5,7,Golden Sombreros
+2024,9,Regular season,A Drive By Castellanos,5,6,Kruk Yourself
+2024,9,Regular season,Westle Mania,4,8,Ahh Puckett
+2024,9,Regular season,Operation Vamos,3,9,The Mendoza Line
+2024,9,Regular season,Scrap Heap Gold,2,8,Hawks 26
+2024,10,Regular season,My Sweet Lourdes,7,5,Eli's College Fund
+2024,10,Regular season,A Drive By Castellanos,7,4,Westle Mania
+2024,10,Regular season,Kruk Yourself,4,6,The Mendoza Line
+2024,10,Regular season,Operation Vamos,4,6,Hawks 26
+2024,10,Regular season,Scrap Heap Gold,4,7,Golden Sombreros
+2024,10,Regular season,Winfield Wants Noise,6,6,Ahh Puckett
+2024,11,Regular season,My Sweet Lourdes,2,9,Scrap Heap Gold
+2024,11,Regular season,Eli's College Fund,2,10,Ahh Puckett
+2024,11,Regular season,A Drive By Castellanos,4,7,Winfield Wants Noise
+2024,11,Regular season,Westle Mania,4,8,Kruk Yourself
+2024,11,Regular season,Operation Vamos,4,5,Golden Sombreros
+2024,11,Regular season,The Mendoza Line,6,5,Hawks 26
+2024,12,Regular season,My Sweet Lourdes,4,6,Operation Vamos
+2024,12,Regular season,Eli's College Fund,8,3,A Drive By Castellanos
+2024,12,Regular season,Westle Mania,7,5,Winfield Wants Noise
+2024,12,Regular season,Kruk Yourself,7,5,Hawks 26
+2024,12,Regular season,Scrap Heap Gold,11,0,Ahh Puckett
+2024,12,Regular season,Golden Sombreros,2,10,The Mendoza Line
+2024,13,Regular season,My Sweet Lourdes,8,4,The Mendoza Line
+2024,13,Regular season,Eli's College Fund,6,6,Westle Mania
+2024,13,Regular season,A Drive By Castellanos,3,8,Scrap Heap Gold
+2024,13,Regular season,Kruk Yourself,5,7,Winfield Wants Noise
+2024,13,Regular season,Operation Vamos,7,5,Ahh Puckett
+2024,13,Regular season,Golden Sombreros,6,6,Hawks 26
+2024,14,Regular season,My Sweet Lourdes,2,10,Hawks 26
+2024,14,Regular season,Eli's College Fund,6,5,Winfield Wants Noise
+2024,14,Regular season,A Drive By Castellanos,5,5,Operation Vamos
+2024,14,Regular season,Westle Mania,8,3,Scrap Heap Gold
+2024,14,Regular season,Kruk Yourself,7,5,Golden Sombreros
+2024,14,Regular season,The Mendoza Line,4,7,Ahh Puckett
+2024,15,Regular season,My Sweet Lourdes,5,7,Golden Sombreros
+2024,15,Regular season,Eli's College Fund,3,9,Kruk Yourself
+2024,15,Regular season,A Drive By Castellanos,9,3,The Mendoza Line
+2024,15,Regular season,Westle Mania,6,5,Operation Vamos
+2024,15,Regular season,Scrap Heap Gold,7,4,Winfield Wants Noise
+2024,15,Regular season,Hawks 26,2,8,Ahh Puckett
+2024,16,Regular season,My Sweet Lourdes,5,7,Kruk Yourself
+2024,16,Regular season,Eli's College Fund,4,8,Scrap Heap Gold
+2024,16,Regular season,A Drive By Castellanos,7,5,Hawks 26
+2024,16,Regular season,Westle Mania,6,6,The Mendoza Line
+2024,16,Regular season,Operation Vamos,7,5,Winfield Wants Noise
+2024,16,Regular season,Golden Sombreros,5,6,Ahh Puckett
+2024,17,Regular season,My Sweet Lourdes,4,7,Ahh Puckett
+2024,17,Regular season,Eli's College Fund,6,6,Operation Vamos
+2024,17,Regular season,A Drive By Castellanos,4,8,Golden Sombreros
+2024,17,Regular season,Westle Mania,7,4,Hawks 26
+2024,17,Regular season,Kruk Yourself,2,10,Scrap Heap Gold
+2024,17,Regular season,The Mendoza Line,7,5,Winfield Wants Noise
+2024,18,Regular season,My Sweet Lourdes,2,9,A Drive By Castellanos
+2024,18,Regular season,Eli's College Fund,2,8,The Mendoza Line
+2024,18,Regular season,Westle Mania,1,11,Golden Sombreros
+2024,18,Regular season,Kruk Yourself,0,12,Ahh Puckett
+2024,18,Regular season,Operation Vamos,0,12,Scrap Heap Gold
+2024,18,Regular season,Winfield Wants Noise,9,3,Hawks 26
+2024,19,Regular season,My Sweet Lourdes,10,2,Westle Mania
+2024,19,Regular season,Eli's College Fund,8,3,Hawks 26
+2024,19,Regular season,A Drive By Castellanos,2,9,Ahh Puckett
+2024,19,Regular season,Kruk Yourself,3,9,Operation Vamos
+2024,19,Regular season,Scrap Heap Gold,11,1,The Mendoza Line
+2024,19,Regular season,Golden Sombreros,2,9,Winfield Wants Noise
+2024,20,Regular season,My Sweet Lourdes,4,7,Winfield Wants Noise
+2024,20,Regular season,Eli's College Fund,8,3,Golden Sombreros
+2024,20,Regular season,A Drive By Castellanos,4,8,Kruk Yourself
+2024,20,Regular season,Westle Mania,2,9,Ahh Puckett
+2024,20,Regular season,Operation Vamos,8,3,The Mendoza Line
+2024,20,Regular season,Scrap Heap Gold,6,6,Hawks 26
+2024,21,Regular season,My Sweet Lourdes,4,7,Eli's College Fund
+2024,21,Regular season,A Drive By Castellanos,2,9,Westle Mania
+2024,21,Regular season,Kruk Yourself,4,8,The Mendoza Line
+2024,21,Regular season,Operation Vamos,8,3,Hawks 26
+2024,21,Regular season,Scrap Heap Gold,2,8,Golden Sombreros
+2024,21,Regular season,Winfield Wants Noise,2,10,Ahh Puckett
+2024,22,Championship Bracket,Westle Mania,5,6,Winfield Wants Noise
+2024,22,Championship Bracket,The Mendoza Line,8,3,Hawks 26
+2024,22,Consolation Bracket,My Sweet Lourdes,4,8,Operation Vamos
+2024,22,Consolation Bracket,Kruk Yourself,7,5,Golden Sombreros
+2024,23,Championship Bracket,Scrap Heap Gold,10,2,Winfield Wants Noise
+2024,23,Championship Bracket,The Mendoza Line,8,3,Ahh Puckett
+2024,23,Consolation Bracket,My Sweet Lourdes,6,6,Golden Sombreros
+2024,23,Consolation Bracket,Eli's College Fund,1,10,Operation Vamos
+2024,23,Consolation Bracket,A Drive By Castellanos,8,4,Kruk Yourself
+2024,23,Consolation Bracket,Westle Mania,5,6,Hawks 26
+2024,24,Championship Bracket,Scrap Heap Gold,8,4,The Mendoza Line
+2024,24,Consolation Bracket,Eli's College Fund,9,2,Kruk Yourself
+2024,24,Consolation Bracket,A Drive By Castellanos,4,8,Operation Vamos
+2024,24,Consolation Bracket,Winfield Wants Noise,9,3,Ahh Puckett
+2025,1,Regular season,Make Em Say Uhh Suzuki,4,6,Hawks 26
+2025,1,Regular season,Ahh Puckett,4,8,Eli's College Fund
+2025,1,Regular season,Golden Sombreros,9,3,Let Bygones Be Bygones
+2025,1,Regular season,Operation Vamos,2,10,Winfield Wants Noise
+2025,1,Regular season,Scrap Heap Gold,8,4,The Mets Suck Ass
+2025,1,Regular season,Home Run Furby,6,6,O.M.G.
+2025,2,Regular season,Make Em Say Uhh Suzuki,9,3,Golden Sombreros
+2025,2,Regular season,Ahh Puckett,7,3,Let Bygones Be Bygones
+2025,2,Regular season,Eli's College Fund,6,6,Home Run Furby
+2025,2,Regular season,Hawks 26,5,7,Operation Vamos
+2025,2,Regular season,Scrap Heap Gold,8,4,O.M.G.
+2025,2,Regular season,The Mets Suck Ass,5,7,Winfield Wants Noise
+2025,3,Regular season,Make Em Say Uhh Suzuki,3,9,Ahh Puckett
+2025,3,Regular season,Eli's College Fund,10,2,O.M.G.
+2025,3,Regular season,Golden Sombreros,5,7,Operation Vamos
+2025,3,Regular season,Hawks 26,5,5,The Mets Suck Ass
+2025,3,Regular season,Scrap Heap Gold,8,4,Winfield Wants Noise
+2025,3,Regular season,Home Run Furby,9,3,Let Bygones Be Bygones
+2025,4,Regular season,Make Em Say Uhh Suzuki,3,8,Home Run Furby
+2025,4,Regular season,Ahh Puckett,8,3,Operation Vamos
+2025,4,Regular season,Eli's College Fund,5,6,Scrap Heap Gold
+2025,4,Regular season,Golden Sombreros,7,4,The Mets Suck Ass
+2025,4,Regular season,Hawks 26,4,8,Winfield Wants Noise
+2025,4,Regular season,O.M.G.,8,4,Let Bygones Be Bygones
+2025,5,Regular season,Make Em Say Uhh Suzuki,3,8,O.M.G.
+2025,5,Regular season,Ahh Puckett,7,5,The Mets Suck Ass
+2025,5,Regular season,Eli's College Fund,1,10,Let Bygones Be Bygones
+2025,5,Regular season,Golden Sombreros,5,7,Winfield Wants Noise
+2025,5,Regular season,Hawks 26,4,8,Scrap Heap Gold
+2025,5,Regular season,Operation Vamos,4,8,Home Run Furby
+2025,6,Regular season,Make Em Say Uhh Suzuki,7,4,Eli's College Fund
+2025,6,Regular season,Ahh Puckett,3,9,Winfield Wants Noise
+2025,6,Regular season,Golden Sombreros,8,4,Hawks 26
+2025,6,Regular season,Operation Vamos,4,8,O.M.G.
+2025,6,Regular season,Scrap Heap Gold,3,9,Let Bygones Be Bygones
+2025,6,Regular season,The Mets Suck Ass,2,10,Home Run Furby
+2025,7,Regular season,Make Em Say Uhh Suzuki,8,4,Let Bygones Be Bygones
+2025,7,Regular season,Ahh Puckett,10,2,Hawks 26
+2025,7,Regular season,Eli's College Fund,8,3,Operation Vamos
+2025,7,Regular season,Golden Sombreros,10,2,Scrap Heap Gold
+2025,7,Regular season,The Mets Suck Ass,7,5,O.M.G.
+2025,7,Regular season,Home Run Furby,5,6,Winfield Wants Noise
+2025,8,Regular season,Make Em Say Uhh Suzuki,6,5,Scrap Heap Gold
+2025,8,Regular season,Ahh Puckett,6,6,Golden Sombreros
+2025,8,Regular season,Eli's College Fund,5,6,The Mets Suck Ass
+2025,8,Regular season,Hawks 26,8,2,Home Run Furby
+2025,8,Regular season,Operation Vamos,5,7,Let Bygones Be Bygones
+2025,8,Regular season,Winfield Wants Noise,9,3,O.M.G.
+2025,9,Regular season,Make Em Say Uhh Suzuki,4,8,Operation Vamos
+2025,9,Regular season,Ahh Puckett,6,6,Scrap Heap Gold
+2025,9,Regular season,Eli's College Fund,1,10,Winfield Wants Noise
+2025,9,Regular season,Golden Sombreros,4,8,Home Run Furby
+2025,9,Regular season,Hawks 26,6,5,O.M.G.
+2025,9,Regular season,The Mets Suck Ass,4,8,Let Bygones Be Bygones
+2025,10,Regular season,Make Em Say Uhh Suzuki,6,6,The Mets Suck Ass
+2025,10,Regular season,Ahh Puckett,7,4,Home Run Furby
+2025,10,Regular season,Eli's College Fund,6,4,Hawks 26
+2025,10,Regular season,Golden Sombreros,7,5,O.M.G.
+2025,10,Regular season,Operation Vamos,6,6,Scrap Heap Gold
+2025,10,Regular season,Winfield Wants Noise,10,2,Let Bygones Be Bygones
+2025,11,Regular season,Make Em Say Uhh Suzuki,3,9,Winfield Wants Noise
+2025,11,Regular season,Ahh Puckett,6,6,O.M.G.
+2025,11,Regular season,Eli's College Fund,7,5,Golden Sombreros
+2025,11,Regular season,Hawks 26,4,8,Let Bygones Be Bygones
+2025,11,Regular season,Operation Vamos,2,9,The Mets Suck Ass
+2025,11,Regular season,Scrap Heap Gold,6,6,Home Run Furby
+2025,12,Regular season,Make Em Say Uhh Suzuki,7,4,Hawks 26
+2025,12,Regular season,Ahh Puckett,8,4,Eli's College Fund
+2025,12,Regular season,Golden Sombreros,4,7,Let Bygones Be Bygones
+2025,12,Regular season,Operation Vamos,5,7,Winfield Wants Noise
+2025,12,Regular season,Scrap Heap Gold,8,2,The Mets Suck Ass
+2025,12,Regular season,Home Run Furby,8,3,O.M.G.
+2025,13,Regular season,Make Em Say Uhh Suzuki,6,5,Golden Sombreros
+2025,13,Regular season,Ahh Puckett,9,3,Let Bygones Be Bygones
+2025,13,Regular season,Eli's College Fund,7,4,Home Run Furby
+2025,13,Regular season,Hawks 26,9,3,Operation Vamos
+2025,13,Regular season,Scrap Heap Gold,11,1,O.M.G.
+2025,13,Regular season,The Mets Suck Ass,10,1,Winfield Wants Noise
+2025,14,Regular season,Make Em Say Uhh Suzuki,4,7,Ahh Puckett
+2025,14,Regular season,Eli's College Fund,8,4,O.M.G.
+2025,14,Regular season,Golden Sombreros,6,6,Operation Vamos
+2025,14,Regular season,Hawks 26,5,5,The Mets Suck Ass
+2025,14,Regular season,Scrap Heap Gold,5,5,Winfield Wants Noise
+2025,14,Regular season,Home Run Furby,7,5,Let Bygones Be Bygones
+2025,15,Regular season,Make Em Say Uhh Suzuki,4,8,Home Run Furby
+2025,15,Regular season,Ahh Puckett,9,2,Operation Vamos
+2025,15,Regular season,Eli's College Fund,8,4,Scrap Heap Gold
+2025,15,Regular season,Golden Sombreros,5,6,The Mets Suck Ass
+2025,15,Regular season,Hawks 26,3,8,Winfield Wants Noise
+2025,15,Regular season,O.M.G.,2,10,Let Bygones Be Bygones
+2025,16,Regular season,Make Em Say Uhh Suzuki,7,5,O.M.G.
+2025,16,Regular season,Ahh Puckett,7,5,The Mets Suck Ass
+2025,16,Regular season,Eli's College Fund,6,5,Let Bygones Be Bygones
+2025,16,Regular season,Golden Sombreros,5,7,Winfield Wants Noise
+2025,16,Regular season,Hawks 26,10,1,Scrap Heap Gold
+2025,16,Regular season,Operation Vamos,7,5,Home Run Furby
+2025,17,Regular season,Make Em Say Uhh Suzuki,5,4,Eli's College Fund
+2025,17,Regular season,Ahh Puckett,7,5,Winfield Wants Noise
+2025,17,Regular season,Golden Sombreros,3,7,Hawks 26
+2025,17,Regular season,Operation Vamos,7,5,O.M.G.
+2025,17,Regular season,Scrap Heap Gold,8,4,Let Bygones Be Bygones
+2025,17,Regular season,The Mets Suck Ass,2,9,Home Run Furby
+2025,18,Regular season,Make Em Say Uhh Suzuki,5,6,Let Bygones Be Bygones
+2025,18,Regular season,Ahh Puckett,10,2,Hawks 26
+2025,18,Regular season,Eli's College Fund,3,6,Operation Vamos
+2025,18,Regular season,Golden Sombreros,3,8,Scrap Heap Gold
+2025,18,Regular season,The Mets Suck Ass,5,5,O.M.G.
+2025,18,Regular season,Home Run Furby,5,6,Winfield Wants Noise
+2025,19,Regular season,Make Em Say Uhh Suzuki,4,8,Scrap Heap Gold
+2025,19,Regular season,Ahh Puckett,8,4,Golden Sombreros
+2025,19,Regular season,Eli's College Fund,5,6,The Mets Suck Ass
+2025,19,Regular season,Hawks 26,5,7,Home Run Furby
+2025,19,Regular season,Operation Vamos,7,4,Let Bygones Be Bygones
+2025,19,Regular season,Winfield Wants Noise,0,11,O.M.G.
+2025,20,Regular season,Make Em Say Uhh Suzuki,9,3,Operation Vamos
+2025,20,Regular season,Ahh Puckett,5,6,Scrap Heap Gold
+2025,20,Regular season,Eli's College Fund,7,3,Winfield Wants Noise
+2025,20,Regular season,Golden Sombreros,4,8,Home Run Furby
+2025,20,Regular season,Hawks 26,9,3,O.M.G.
+2025,20,Regular season,The Mets Suck Ass,4,7,Let Bygones Be Bygones
+2025,21,Regular season,Make Em Say Uhh Suzuki,11,1,The Mets Suck Ass
+2025,21,Regular season,Ahh Puckett,6,5,Home Run Furby
+2025,21,Regular season,Eli's College Fund,6,6,Hawks 26
+2025,21,Regular season,Golden Sombreros,2,10,O.M.G.
+2025,21,Regular season,Operation Vamos,7,3,Scrap Heap Gold
+2025,21,Regular season,Winfield Wants Noise,10,2,Let Bygones Be Bygones
+2025,22,Championship Bracket,Make Em Say Uhh Suzuki,3,9,Home Run Furby
+2025,22,Championship Bracket,Eli's College Fund,9,3,Scrap Heap Gold
+2025,22,Consolation Bracket,Golden Sombreros,3,8,Operation Vamos
+2025,22,Consolation Bracket,The Mets Suck Ass,7,5,O.M.G.
+2025,23,Championship Bracket,Ahh Puckett,2,10,Eli's College Fund
+2025,23,Championship Bracket,Home Run Furby,4,7,Winfield Wants Noise
+2025,23,Consolation Bracket,Make Em Say Uhh Suzuki,6,6,Scrap Heap Gold
+2025,23,Consolation Bracket,Golden Sombreros,4,8,O.M.G.
+2025,23,Consolation Bracket,Hawks 26,2,9,The Mets Suck Ass
+2025,23,Consolation Bracket,Operation Vamos,4,7,Let Bygones Be Bygones
+2025,24,Championship Bracket,Eli's College Fund,5,6,Winfield Wants Noise
+2025,24,Consolation Bracket,Ahh Puckett,8,4,Home Run Furby
+2025,24,Consolation Bracket,Hawks 26,0,10,Operation Vamos
+2025,24,Consolation Bracket,The Mets Suck Ass,1,9,Let Bygones Be Bygones
+2026,1,Regular season,Bury my Bats at Wounded Knee,4,8,Hawks 26
+2026,1,Regular season,Ahh Puckett,7,5,Operation Vamos
+2026,1,Regular season,Eli's College Fund,0,12,Ass in the Jackpot
+2026,1,Regular season,Golden Sombreros,4,7,Julio Down by the Schoolyard
+2026,1,Regular season,Home Run Furby,3,7,Winfield Wants Noise
+2026,1,Regular season,O.M.G.,4,8,Scrap Heap Gold
+2026,2,Regular season,Bury my Bats at Wounded Knee,10,1,Home Run Furby
+2026,2,Regular season,Ahh Puckett,6,6,O.M.G.
+2026,2,Regular season,Eli's College Fund,4,8,Winfield Wants Noise
+2026,2,Regular season,Golden Sombreros,3,7,Scrap Heap Gold
+2026,2,Regular season,Hawks 26,7,5,Julio Down by the Schoolyard
+2026,2,Regular season,Operation Vamos,9,3,Ass in the Jackpot
+2026,3,Regular season,Bury my Bats at Wounded Knee,8,4,Eli's College Fund
+2026,3,Regular season,Ahh Puckett,3,8,Scrap Heap Gold
+2026,3,Regular season,Golden Sombreros,9,3,Hawks 26
+2026,3,Regular season,Home Run Furby,3,9,Julio Down by the Schoolyard
+2026,3,Regular season,O.M.G.,5,7,Ass in the Jackpot
+2026,3,Regular season,Operation Vamos,2,10,Winfield Wants Noise
+2026,4,Regular season,Bury my Bats at Wounded Knee,4,7,Operation Vamos
+2026,4,Regular season,Ahh Puckett,10,1,Ass in the Jackpot
+2026,4,Regular season,Eli's College Fund,5,6,Julio Down by the Schoolyard
+2026,4,Regular season,Golden Sombreros,5,6,Home Run Furby
+2026,4,Regular season,Hawks 26,2,9,Scrap Heap Gold
+2026,4,Regular season,O.M.G.,6,5,Winfield Wants Noise
+2026,5,Regular season,Bury my Bats at Wounded Knee,4,6,O.M.G.
+2026,5,Regular season,Ahh Puckett,4,8,Winfield Wants Noise
+2026,5,Regular season,Eli's College Fund,7,5,Golden Sombreros
+2026,5,Regular season,Hawks 26,7,4,Home Run Furby
+2026,5,Regular season,Julio Down by the Schoolyard,6,5,Operation Vamos
+2026,5,Regular season,Scrap Heap Gold,9,1,Ass in the Jackpot
+2026,6,Regular season,Bury my Bats at Wounded Knee,5,7,Ahh Puckett
+2026,6,Regular season,Eli's College Fund,8,4,Hawks 26
+2026,6,Regular season,Golden Sombreros,7,4,Operation Vamos
+2026,6,Regular season,Home Run Furby,5,5,Scrap Heap Gold
+2026,6,Regular season,Julio Down by the Schoolyard,8,4,O.M.G.
+2026,6,Regular season,Ass in the Jackpot,7,3,Winfield Wants Noise
+2026,7,Regular season,Bury my Bats at Wounded Knee,3,8,Ass in the Jackpot
+2026,7,Regular season,Ahh Puckett,3,7,Julio Down by the Schoolyard
+2026,7,Regular season,Eli's College Fund,8,4,Home Run Furby
+2026,7,Regular season,Golden Sombreros,2,10,O.M.G.
+2026,7,Regular season,Hawks 26,2,10,Operation Vamos
+2026,7,Regular season,Scrap Heap Gold,5,7,Winfield Wants Noise
+2026,8,Regular season,Bury my Bats at Wounded Knee,9,3,Winfield Wants Noise
+2026,8,Regular season,Ahh Puckett,6,6,Golden Sombreros
+2026,8,Regular season,Eli's College Fund,8,4,Scrap Heap Gold
+2026,8,Regular season,Hawks 26,1,9,O.M.G.
+2026,8,Regular season,Home Run Furby,4,7,Operation Vamos
+2026,8,Regular season,Julio Down by the Schoolyard,8,4,Ass in the Jackpot
+2026,9,Regular season,Bury my Bats at Wounded Knee,8,3,Scrap Heap Gold
+2026,9,Regular season,Ahh Puckett,5,6,Hawks 26
+2026,9,Regular season,Eli's College Fund,5,7,Operation Vamos
+2026,9,Regular season,Golden Sombreros,8,4,Ass in the Jackpot
+2026,9,Regular season,Home Run Furby,6,6,O.M.G.
+2026,9,Regular season,Julio Down by the Schoolyard,7,5,Winfield Wants Noise
+2026,10,Regular season,Bury my Bats at Wounded Knee,6,6,Julio Down by the Schoolyard
+2026,10,Regular season,Ahh Puckett,4,5,Home Run Furby
+2026,10,Regular season,Eli's College Fund,9,1,O.M.G.
+2026,10,Regular season,Golden Sombreros,7,5,Winfield Wants Noise
+2026,10,Regular season,Hawks 26,7,5,Ass in the Jackpot
+2026,10,Regular season,Operation Vamos,9,3,Scrap Heap Gold
+2026,11,Regular season,Bury my Bats at Wounded Knee,9,1,Golden Sombreros
+2026,11,Regular season,Ahh Puckett,3,8,Eli's College Fund
+2026,11,Regular season,Hawks 26,4,8,Winfield Wants Noise
+2026,11,Regular season,Home Run Furby,3,8,Ass in the Jackpot
+2026,11,Regular season,Julio Down by the Schoolyard,3,7,Scrap Heap Gold
+2026,11,Regular season,O.M.G.,8,4,Operation Vamos
+2026,12,Regular season,Bury my Bats at Wounded Knee,11,1,Hawks 26
+2026,12,Regular season,Ahh Puckett,6,4,Operation Vamos
+2026,12,Regular season,Eli's College Fund,6,6,Ass in the Jackpot
+2026,12,Regular season,Golden Sombreros,6,4,Julio Down by the Schoolyard
+2026,12,Regular season,Home Run Furby,6,6,Winfield Wants Noise
+2026,12,Regular season,O.M.G.,6,5,Scrap Heap Gold
+2026,13,Regular season,Bury my Bats at Wounded Knee,5,7,Home Run Furby
+2026,13,Regular season,Ahh Puckett,9,3,O.M.G.
+2026,13,Regular season,Eli's College Fund,4,6,Winfield Wants Noise
+2026,13,Regular season,Golden Sombreros,7,3,Scrap Heap Gold
+2026,13,Regular season,Hawks 26,3,8,Julio Down by the Schoolyard
+2026,13,Regular season,Operation Vamos,7,5,Ass in the Jackpot
+2026,14,Regular season,Bury my Bats at Wounded Knee,4,7,Eli's College Fund
+2026,14,Regular season,Ahh Puckett,3,8,Scrap Heap Gold
+2026,14,Regular season,Golden Sombreros,10,2,Hawks 26
+2026,14,Regular season,Home Run Furby,8,4,Julio Down by the Schoolyard
+2026,14,Regular season,O.M.G.,7,2,Ass in the Jackpot
+2026,14,Regular season,Operation Vamos,2,10,Winfield Wants Noise
+2026,15,Regular season,Bury my Bats at Wounded Knee,0,12,Operation Vamos
+2026,15,Regular season,Ahh Puckett,4,7,Ass in the Jackpot
+2026,15,Regular season,Eli's College Fund,3,8,Julio Down by the Schoolyard
+2026,15,Regular season,Golden Sombreros,2,9,Home Run Furby
+2026,15,Regular season,Hawks 26,1,11,Scrap Heap Gold
+2026,15,Regular season,O.M.G.,3,8,Winfield Wants Noise
+2026,16,Regular season,Bury my Bats at Wounded Knee,5,6,O.M.G.
+2026,16,Regular season,Ahh Puckett,10,1,Winfield Wants Noise
+2026,16,Regular season,Eli's College Fund,5,6,Golden Sombreros
+2026,16,Regular season,Hawks 26,3,9,Home Run Furby
+2026,16,Regular season,Julio Down by the Schoolyard,6,5,Operation Vamos
+2026,16,Regular season,Scrap Heap Gold,6,6,Ass in the Jackpot
+2026,17,Regular season,Bury my Bats at Wounded Knee,7,5,Ahh Puckett
+2026,17,Regular season,Eli's College Fund,7,3,Hawks 26
+2026,17,Regular season,Golden Sombreros,3,8,Operation Vamos
+2026,17,Regular season,Home Run Furby,11,1,Scrap Heap Gold
+2026,17,Regular season,Julio Down by the Schoolyard,7,4,O.M.G.
+2026,17,Regular season,Ass in the Jackpot,3,8,Winfield Wants Noise
+2026,18,Regular season,Bury my Bats at Wounded Knee,11,1,Ass in the Jackpot
+2026,18,Regular season,Ahh Puckett,7,4,Julio Down by the Schoolyard
+2026,18,Regular season,Eli's College Fund,7,3,Home Run Furby
+2026,18,Regular season,Golden Sombreros,3,9,O.M.G.
+2026,18,Regular season,Hawks 26,6,6,Operation Vamos
+2026,18,Regular season,Scrap Heap Gold,8,4,Winfield Wants Noise
+2026,19,Regular season,Bury my Bats at Wounded Knee,4,8,Winfield Wants Noise
+2026,19,Regular season,Ahh Puckett,7,5,Golden Sombreros
+2026,19,Regular season,Eli's College Fund,6,6,Scrap Heap Gold
+2026,19,Regular season,Hawks 26,4,8,O.M.G.
+2026,19,Regular season,Home Run Furby,8,3,Operation Vamos
+2026,19,Regular season,Julio Down by the Schoolyard,5,7,Ass in the Jackpot
+2026,20,Regular season,Bury my Bats at Wounded Knee,7,4,Scrap Heap Gold
+2026,20,Regular season,Ahh Puckett,5,6,Hawks 26
+2026,20,Regular season,Eli's College Fund,9,2,Operation Vamos
+2026,20,Regular season,Golden Sombreros,11,0,Ass in the Jackpot
+2026,20,Regular season,Home Run Furby,12,0,O.M.G.
+2026,20,Regular season,Julio Down by the Schoolyard,6,6,Winfield Wants Noise
+2026,21,Regular season,Bury my Bats at Wounded Knee,5,6,Julio Down by the Schoolyard
+2026,21,Regular season,Ahh Puckett,1,10,Home Run Furby
+2026,21,Regular season,Eli's College Fund,4,8,O.M.G.
+2026,21,Regular season,Golden Sombreros,7,5,Winfield Wants Noise
+2026,21,Regular season,Hawks 26,3,9,Ass in the Jackpot
+2026,21,Regular season,Operation Vamos,6,5,Scrap Heap Gold
+2026,22,Regular season,Bury my Bats at Wounded Knee,6,6,Golden Sombreros
+2026,22,Regular season,Ahh Puckett,2,10,Eli's College Fund
+2026,22,Regular season,Hawks 26,8,3,Winfield Wants Noise
+2026,22,Regular season,Home Run Furby,9,1,Ass in the Jackpot
+2026,22,Regular season,Julio Down by the Schoolyard,5,7,Scrap Heap Gold
+2026,22,Regular season,O.M.G.,6,5,Operation Vamos
+2026,23,Championship Bracket,Bury my Bats at Wounded Knee,4,8,Scrap Heap Gold
+2026,23,Championship Bracket,Eli's College Fund,5,7,Winfield Wants Noise
+2026,23,Consolation Bracket,Ahh Puckett,8,3,Ass in the Jackpot
+2026,23,Consolation Bracket,Golden Sombreros,3,8,Hawks 26
+2026,24,Championship Bracket,Home Run Furby,7,4,Scrap Heap Gold
+2026,24,Championship Bracket,Julio Down by the Schoolyard,3,8,Winfield Wants Noise
+2026,24,Consolation Bracket,Bury my Bats at Wounded Knee,1,10,Eli's College Fund
+2026,24,Consolation Bracket,Ahh Puckett,4,6,Operation Vamos
+2026,24,Consolation Bracket,Golden Sombreros,2,9,Ass in the Jackpot
+2026,24,Consolation Bracket,Hawks 26,7,4,O.M.G.
+2026,25,Championship Bracket,Home Run Furby,8,4,Winfield Wants Noise
+2026,25,Consolation Bracket,Ahh Puckett,6,6,O.M.G.
+2026,25,Consolation Bracket,Hawks 26,5,6,Operation Vamos
+2026,25,Consolation Bracket,Julio Down by the Schoolyard,9,3,Scrap Heap Gold
