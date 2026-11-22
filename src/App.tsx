@@ -11,7 +11,7 @@ import Memo from './Memo.tsx'
 
 const TABS = [
   { id: 'jeff', label: 'Beat Jeff', el: <BeatJeff /> },
-  { id: 'rankings', label: '2026 rankings', el: <Rankings /> },
+  { id: 'rankings', label: 'Rankings', el: <Rankings /> },
   { id: 'board', label: 'Draft board', el: <Board /> },
   { id: 'tendencies', label: 'How we draft', el: <Tendencies /> },
   { id: 'scouting', label: 'Scouting', el: <Scouting /> },

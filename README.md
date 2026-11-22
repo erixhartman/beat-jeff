@@ -7,7 +7,7 @@ A draft and season planner for Jeters Never Prosper, a 12-team Yahoo head-to-hea
 | Tab | What it does |
 | --- | --- |
 | Beat Jeff | Scores every regular-season week since 2023 as if Eric had played Jeff, on a Wrigley-style scoreboard, plus the categories where Jeff wins. |
-| 2026 rankings | The top 250 hitters and pitchers of 2026, re-scored on this league's 12 categories and weighted by how much each category decided matchups here. Sortable by every category, filterable by position. |
+| Rankings | The top 250 hitters and pitchers of 2026 (2027 once projections are loaded), re-scored on this league's 12 categories and weighted by how much each category decided matchups here. Sortable by every category, filterable by position. |
 | Draft board | A live board for draft day from the 12th pick: mark picks as they happen, see who'll likely still be there at your next turn, and watch your team's category profile fill in. Saves in your browser. |
 | How we draft | What this league takes in each round, what it returns, when the starter and closer runs begin, late steals and early busts. |
 | Scouting | One card per 2027 rival: finishes, draft habits, pickups, trade partners and weak categories. |
@@ -39,6 +39,19 @@ python build_league.py   # history, tendencies, scouting -> league.json
 python build_board.py    # 2027 draft pool -> board.json
 python build_jeff.py     # Eric vs. Jeff weekly -> jeff.json
 ```
+
+## Loading 2027 projections
+
+Fill in `pipeline/projections_template.xlsx` (or any workbook with a Hitters and a Pitchers sheet; column names are flexible), then:
+
+```
+cd pipeline
+python import_projections.py path/to/projections.xlsx
+python build_values.py --projections data/projections.json
+python build_board.py
+```
+
+The importer matches each row to an MLB player by MLBAM ID, or by name and team, and lists anything it couldn't match cleanly. The Rankings tab, the draft board's rank column and the trade checker all switch to the projections. Positions still follow 2026 Yahoo eligibility; players new to MLB use the sheet's Pos column. The draft board's expected pick still comes from the experts' rankings, because that column is about where the room will draft a player, not what he's worth.
 
 ## In season
 

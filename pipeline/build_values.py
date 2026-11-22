@@ -44,6 +44,11 @@ def hitter_pos(pid):
     out = [p for p in ['C', '1B', '2B', '3B', 'SS', 'OF'] if fgs[pid][p] >= 5 or fpos[pid][p] >= 10]
     return out or ['Util']
 
+import argparse
+ap = argparse.ArgumentParser(); ap.add_argument('--projections', help='data/projections.json from import_projections.py')
+ARGS = ap.parse_args()
+PROJ = json.load(open(ARGS.projections)) if ARGS.projections else None
+
 # ---------- hitters ----------
 H = []
 for s in load('hitting'):
@@ -67,6 +72,19 @@ for p in P:
     if p['gs'] >= 5: roles.append('SP')
     if p['g'] - p['gs'] >= 10: roles.append('RP')
     p['pos'] = roles or (['SP'] if p['gs'] >= p['g'] / 2 else ['RP'])
+
+if PROJ:
+    # 2027 projections replace 2026 stats. Positions still come from 2026 (Yahoo's preseason eligibility uses last
+    # season: 5 starts or 10 games), falling back to the sheet's own position for players new to MLB.
+    role26 = {p['id']: p['pos'] for p in P}
+    H = [dict(x) for x in PROJ['hitters'] if x['ab'] >= 150]
+    P = [dict(x) for x in PROJ['pitchers'] if x['ip'] >= 20]
+    for p in P:
+        if p.get('gs') is not None and p.get('g'):
+            p['pos'] = [r for r, ok in (('SP', p['gs'] >= 5), ('RP', p['g'] - p['gs'] >= 10)) if ok] or ['SP']
+        else:
+            p['pos'] = role26.get(p['id']) or [x for x in p.get('sheetPos', []) if x in ('SP', 'RP')] or (['SP'] if p['ip'] >= 80 else ['RP'])
+        p['gs'] = p.get('gs') or 0; p['g'] = p.get('g') or 0
 
 def score(pool_h, pool_p, h, p):
     abm = st.mean(x['ab'] for x in pool_h); ipm = st.mean(x['ip'] for x in pool_p)
@@ -93,7 +111,10 @@ for _ in range(2):
     ph = sorted(H, key=lambda x: -x['value'])[:180]; pp = sorted(P, key=lambda x: -x['value'])[:180]
     score(ph, pp, H, P)
 
-for x in H: x['pos'] = hitter_pos(x['id'])
+for x in H:
+    pos = hitter_pos(x['id']) if x.get('id') else ['Util']
+    if pos == ['Util'] and x.get('sheetPos'): pos = [p for p in x['sheetPos'] if p in ('C', '1B', '2B', '3B', 'SS', 'OF', 'Util')] or ['Util']
+    x['pos'] = pos
 
 # One list for both: value above replacement. Replacement = the 156th hitter and 108th pitcher,
 # about what 12 teams roster (10 starting bats + 3 bench, 7 arms + 2 bench).
@@ -137,7 +158,7 @@ def finish(lst, grp, top):
         out.append(row)
     return out
 
-data = {'asOf': '2026 regular season (MLB Stats API)', 'weights': W, 'corr': CORR,
+data = {'asOf': PROJ['source'] if PROJ else '2026 regular season (MLB Stats API)', 'mode': 'projections' if PROJ else '2026', 'weights': W, 'corr': CORR,
         'hitters': finish(H, 'B', 250), 'pitchers': finish(P, 'P', 250)}
 # compact pool of everyone scored, for the draft board and trade checker
 data['pool'] = [{'name': ('Shohei Ohtani (Batter)' if 'Ohtani' in x['name'] else x['name']), 'g': 'B', 'pos': x['pos'], 'team': x['team'], 'value': x['value'], 'var': x['var'], 'rank': x['rank'], 'overall': x['overall'], 'z': x['z']} for x in H] + \

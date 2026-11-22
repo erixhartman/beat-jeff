@@ -64,12 +64,24 @@ export default function Rankings() {
 
   return (
     <section>
-      <h2>2026 rankings, scored for this league</h2>
-      <p className="lede">
-        Every 2026 player re-scored on our 12 categories, with each category weighted by how much it decided matchups here
-        from 2023 to 2026. OPS and WHIP count most, saves least. This is last season's value, not a 2027 projection: the NBC and
-        Pitcher List columns show where the experts have each player for 2027.
-      </p>
+      {v.mode === 'projections' ? (
+        <>
+          <h2>2027 rankings, scored for this league</h2>
+          <p className="lede">
+            {v.asOf}, scored on our 12 categories with each category weighted by how much it decided matchups here from 2023 to 2026.
+            OPS and WHIP count most, saves least. The Yahoo column is last season's final rank, for comparison.
+          </p>
+        </>
+      ) : (
+        <>
+          <h2>2026 rankings, scored for this league</h2>
+          <p className="lede">
+            Every 2026 player re-scored on our 12 categories, with each category weighted by how much it decided matchups here
+            from 2023 to 2026. OPS and WHIP count most, saves least. This is last season's value, not a 2027 projection: the NBC and
+            Pitcher List columns show where the experts have each player for 2027.
+          </p>
+        </>
+      )}
       <div className="controls">
         <div className="seg" role="group" aria-label="Player group">
           <button aria-pressed={g === 'B'} onClick={() => switchGroup('B')}>Hitters</button>
@@ -103,7 +115,7 @@ export default function Rankings() {
           </thead>
           <tbody>
             {rows.map(r => (
-              <tr key={r.id}>
+              <tr key={r.id ?? r.name}>
                 <td className="l name">{r.name}{r.small && <span className="small-flag" title="Small 2026 sample">small sample</span>}</td>
                 <td className="l pos-chip">{r.pos.join(', ')}</td>
                 <td className="l dim">{r.team}</td>

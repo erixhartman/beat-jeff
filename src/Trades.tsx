@@ -60,7 +60,7 @@ export default function Trades() {
     <section>
       <h2>Trade checker</h2>
       <p className="lede">
-        Add both sides of a deal to see it in this league's terms: total 2026 league value and what it does to each category. It also checks the rule
+        Add both sides of a deal to see it in this league's terms: total league value and what it does to each category. It also checks the rule
         you broke in 7 of your last 12 trades: don't give up the best player in the deal unless the return clearly fixes a weak category.
       </p>
       <div className="split" style={{ gridTemplateColumns: '1fr 1fr' }}>
@@ -81,7 +81,7 @@ export default function Trades() {
               </tbody>
             </table>
           </div>
-          <p className="note">Change in category score (2026 production). In 2026 your team ranked 12th in runs and 11th in HR and RBI, so a gain there is worth more to you than the totals suggest.</p>
+          <p className="note">Change in category score, from the same numbers as the Rankings tab. In 2026 your team ranked 12th in runs and 11th in HR and RBI, so a gain there is worth more to you than the totals suggest.</p>
         </div>
       )}
 

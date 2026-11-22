@@ -24,7 +24,7 @@ export interface Pitcher {
 }
 export interface PoolPlayer { name: string; g: 'B' | 'P'; pos: string[]; team: string; value: number | null; var?: number; rank: number | null; overall?: number | null; z: Z | null }
 export interface Values {
-  asOf: string; weights: Record<Cat, number>; corr: Record<Cat, number>
+  asOf: string; mode?: '2026' | 'projections'; weights: Record<Cat, number>; corr: Record<Cat, number>
   hitters: Hitter[]; pitchers: Pitcher[]; pool: PoolPlayer[]
 }
 export interface BoardPlayer extends PoolPlayer { nbc?: number; pl?: number; est: number; estFrom: string; overall: number | null }

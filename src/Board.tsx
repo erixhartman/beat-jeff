@@ -29,6 +29,7 @@ export default function Board() {
   const b = useData<{ players: BoardPlayer[] }>('board.json')
   const lg = useData<League>('league.json')
   const v = useData<Values>('values.json')
+  const yr = v?.mode === 'projections' ? '2027' : '2026'
   const [picks, setPicks] = useState<Pick[]>(() => load<Pick[]>(KEY, []))
   const [g, setG] = useState<'all' | 'B' | 'P'>('all')
   const [pos, setPos] = useState('All')
@@ -102,7 +103,7 @@ export default function Board() {
             </div>
             <div className="seg" role="group" aria-label="Sort">
               <button aria-pressed={sortBy === 'est'} onClick={() => setSortBy('est')}>Expected order</button>
-              <button aria-pressed={sortBy === 'value'} onClick={() => setSortBy('value')}>2026 rank</button>
+              <button aria-pressed={sortBy === 'value'} onClick={() => setSortBy('value')}>{yr} rank</button>
               <button aria-pressed={sortBy === 'chance'} onClick={() => setSortBy('chance')}>Gone soonest</button>
             </div>
             <input className="search" type="search" placeholder="Find a player" value={q} onChange={e => setQ(e.target.value)} aria-label="Find a player" />
@@ -113,7 +114,7 @@ export default function Board() {
               <thead>
                 <tr>
                   <th title="Where he's expected to go in a 12-team draft">Expected pick</th><th className="l">Player</th><th className="l">Pos</th><th className="l">Team</th>
-                  <th title="Rank on the 2026 rankings tab, 1–500 across hitters and pitchers">2026 rank</th>
+                  <th title="Rank on the Rankings tab, 1–500 across hitters and pitchers">{yr} rank</th>
                   <th title={target ? `Chance he's still available at pick ${target}` : ''}>{target ? `There at ${target}?` : 'There?'}</th>
                   <th className="l">Mark</th>
                 </tr>
@@ -145,7 +146,7 @@ export default function Board() {
           </div>
           <p className="note">
             Expected pick comes from the experts' 2027 rankings (NBC's top 150, then Pitcher List's order for starters, then 2026 value for everyone else).
-            2026 rank is this league's own scoring of last season, so a big gap between the two is either a bargain or a warning: check why.
+            {yr} rank is this league's own scoring ({yr === '2027' ? 'of the 2027 projections' : 'of last season'}), so a big gap between the two is either a bargain or a warning: check why.
             The chance he's still there assumes picks land within about 30% of the expected slot. It's a rough guide, not a projection of this room.
           </p>
         </div>
@@ -176,7 +177,7 @@ export default function Board() {
           </div>
           <div className="panel">
             <h4>Category profile</h4>
-            <p className="note" style={{ margin: '0 0 8px' }}>Sum of your players' 2026 category scores. Watch for empty bars in OPS, runs and WHIP.</p>
+            <p className="note" style={{ margin: '0 0 8px' }}>Sum of your players' {yr} category scores. Watch for empty bars in OPS, runs and WHIP.</p>
             <table className="stats" style={{ fontSize: 14 }}>
               <tbody>
                 {[...HCATS, ...PCATS].map(c => {
