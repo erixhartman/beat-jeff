@@ -46,7 +46,7 @@ export default function BeatJeff() {
         </div>
       </div>
 
-      <div className="scoreboard" style={{ ['--n' as string]: cur.weeks.length }}>
+      <div className="scoreboard" tabIndex={0} aria-label="Weekly scoreboard, Eric against Jeff" role="region" style={{ ['--n' as string]: cur.weeks.length }}>
         <div className="sb-row">
           <div className="sb-label" style={{ fontSize: 15, color: '#c9d4cc' }}>Week</div>
           {cur.weeks.map(x => <div key={x.week} className="sb-head">{x.week}</div>)}
@@ -54,12 +54,12 @@ export default function BeatJeff() {
         </div>
         <div className="sb-row">
           <div className="sb-label">Eric</div>
-          {cur.weeks.map(x => <div key={x.week} className={'sb-cell' + (x.w > x.l ? ' win' : '')} title={`Week ${x.week}: ${x.w}-${x.l}-${x.t}`}>{x.w}</div>)}
+          {cur.weeks.map(x => <div key={x.week} className={'sb-cell' + (x.w > x.l ? ' win' : '')} title={`Week ${x.week}: ${x.w}-${x.l}-${x.t}`}>{x.w}{x.w > x.l && <span className="sr-only"> (Eric won week {x.week})</span>}</div>)}
           <div className="sb-cell sb-total">{w}</div>
         </div>
         <div className="sb-row">
           <div className="sb-label">Jeff</div>
-          {cur.weeks.map(x => <div key={x.week} className={'sb-cell' + (x.l > x.w ? ' win' : '')}>{x.l}</div>)}
+          {cur.weeks.map(x => <div key={x.week} className={'sb-cell' + (x.l > x.w ? ' win' : '')}>{x.l}{x.l > x.w && <span className="sr-only"> (Jeff won week {x.week})</span>}</div>)}
           <div className="sb-cell sb-total">{l}</div>
         </div>
         <p className="sb-caption">
@@ -70,7 +70,7 @@ export default function BeatJeff() {
 
       <h3>Where Jeff beats you</h3>
       <p className="lede">Weeks each of you won each category, all four seasons combined.</p>
-      <div className="table-wrap narrow">
+      <div className="table-wrap narrow" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Category</th><th>Eric</th><th>Jeff</th><th className="l">Edge</th></tr></thead>
           <tbody>
@@ -85,7 +85,7 @@ export default function BeatJeff() {
       </div>
 
       <h3>The real matchups</h3>
-      <div className="table-wrap narrow">
+      <div className="table-wrap narrow" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Season</th><th>Week</th><th>Eric</th><th>Jeff</th><th className="l">Result</th></tr></thead>
           <tbody>

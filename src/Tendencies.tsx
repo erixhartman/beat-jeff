@@ -13,7 +13,7 @@ export default function Tendencies() {
       </p>
 
       <h3>What goes when, and what it returns</h3>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0}>
         <table className="stats">
           <thead>
             <tr>
@@ -41,7 +41,7 @@ export default function Tendencies() {
 
       <h3>When the runs start</h3>
       <p className="lede">The overall pick where the first starter, 12th starter, first closer and fifth closer went each year. With the 12th pick, your turns are 12/13, 36/37, 60/61 and 84/85.</p>
-      <div className="table-wrap narrow">
+      <div className="table-wrap narrow" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Draft</th><th>1st SP</th><th>12th SP</th><th>1st closer</th><th>5th closer</th></tr></thead>
           <tbody>
@@ -55,7 +55,7 @@ export default function Tendencies() {
 
       <h3>Late steals</h3>
       <p className="lede">Round 10 or later, finished top 40.</p>
-      <div className="table-wrap mid">
+      <div className="table-wrap mid" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Year</th><th>Round</th><th className="l">Player</th><th>Final rank</th><th className="l">Drafted by</th></tr></thead>
           <tbody>{lg.steals.map(s => <tr key={s.season + s.player}><td className="l">{s.season}</td><td>{s.round}</td><td className="l name">{s.player}</td><td>{s.rank}</td><td className="l dim">{s.by}</td></tr>)}</tbody>
@@ -64,7 +64,7 @@ export default function Tendencies() {
 
       <h3>Early busts</h3>
       <p className="lede">Rounds 1–3, finished worse than 250th. The worst were injuries (Yordan in 2025, Acuña and Strider in 2024), but plenty were just bad years. It happens to two or three teams every draft.</p>
-      <div className="table-wrap mid">
+      <div className="table-wrap mid" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Year</th><th>Round</th><th className="l">Player</th><th>Final rank</th><th className="l">Drafted by</th></tr></thead>
           <tbody>{lg.busts.map(s => <tr key={s.season + s.player}><td className="l">{s.season}</td><td>{s.round}</td><td className="l name">{s.player}</td><td>{s.rank}</td><td className="l dim">{s.by}</td></tr>)}</tbody>

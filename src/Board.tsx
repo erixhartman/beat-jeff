@@ -109,7 +109,7 @@ export default function Board() {
             <input className="search" type="search" placeholder="Find a player" value={q} onChange={e => setQ(e.target.value)} aria-label="Find a player" />
             <label className="check"><input type="checkbox" checked={hideTaken} onChange={e => setHideTaken(e.target.checked)} /> Hide taken</label>
           </div>
-          <div className="table-wrap">
+          <div className="table-wrap" tabIndex={0}>
             <table className="stats">
               <thead>
                 <tr>
@@ -152,7 +152,7 @@ export default function Board() {
         </div>
         <aside className="side">
           <div className="panel">
-            <h4>Pick {current > 264 ? 'done' : current} · round {Math.min(round, 22)}</h4>
+            <h3>Pick {current > 264 ? 'done' : current} · round {Math.min(round, 22)}</h3>
             <dl className="kv">
               <dt>Your next pick</dt><dd>{nextMine ? `#${nextMine}${nextMine === current ? ' (you’re up)' : ` in ${nextMine - current} picks`}` : 'Draft over'}</dd>
               <dt>Then</dt><dd>{afterThat ? `#${afterThat}` : '–'}</dd>
@@ -167,7 +167,7 @@ export default function Board() {
             </div>
           </div>
           <div className="panel">
-            <h4>Your team ({mine.length})</h4>
+            <h3>Your team ({mine.length})</h3>
             <p className="note" style={{ margin: '0 0 6px' }}>{counts.H} hitters · {counts.SP} SP · {counts.RP} RP</p>
             {mine.length === 0 ? <p className="note">No picks yet.</p> : (
               <ol style={{ margin: 0, paddingLeft: 20, font: '500 15px/1.45 var(--font-table)' }}>
@@ -176,7 +176,7 @@ export default function Board() {
             )}
           </div>
           <div className="panel">
-            <h4>Category profile</h4>
+            <h3>Category profile</h3>
             <p className="note" style={{ margin: '0 0 8px' }}>Sum of your players' {yr} category scores. Watch for empty bars in OPS, runs and WHIP.</p>
             <table className="stats" style={{ fontSize: 14 }}>
               <tbody>

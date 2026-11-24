@@ -10,7 +10,7 @@ function Picker({ label, chosen, setChosen, pool }: { label: string; chosen: Poo
   }, [q, pool, chosen])
   return (
     <div className="panel">
-      <h4>{label}</h4>
+      <h3>{label}</h3>
       <input className="search" type="search" placeholder="Add a player" value={q} onChange={e => setQ(e.target.value)} aria-label={label} />
       {hits.length > 0 && (
         <ul style={{ listStyle: 'none', padding: 0, margin: '6px 0' }}>
@@ -63,7 +63,7 @@ export default function Trades() {
         Add both sides of a deal to see it in this league's terms: total league value and what it does to each category. It also checks the rule
         you broke in 7 of your last 12 trades: don't give up the best player in the deal unless the return clearly fixes a weak category.
       </p>
-      <div className="split" style={{ gridTemplateColumns: '1fr 1fr' }}>
+      <div className="split halves">
         <Picker label="You give" chosen={give} setChosen={setGive} pool={v.pool} />
         <Picker label="You get" chosen={get} setChosen={setGet} pool={v.pool} />
       </div>
@@ -73,7 +73,7 @@ export default function Trades() {
             {net >= 0 ? 'You gain' : 'You lose'} {Math.abs(net).toFixed(1)} in league value.
             {best && best.side === 'give' && <> The best player in this deal, {best.p.name}, is going the other way.</>}
           </p>
-          <div className="table-wrap">
+          <div className="table-wrap" tabIndex={0}>
             <table className="stats">
               <thead><tr>{cats.map(c => <th key={c}>{catLabel(c)}</th>)}</tr></thead>
               <tbody>
@@ -94,7 +94,7 @@ export default function Trades() {
         </label>
         <span className="note">{log.length} trades. Numbers in brackets are each player's final Yahoo rank that season.</span>
       </div>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Season</th><th className="l">Date</th><th className="l">Manager</th><th className="l">Got</th><th className="l">Manager</th><th className="l">Got</th></tr></thead>
           <tbody>

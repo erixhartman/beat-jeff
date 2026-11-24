@@ -81,7 +81,7 @@ export default function Scouting() {
               <span className="team">{m === 'Wes' ? 'Takes over O.M.G. for 2027' : lg.team2026[m]}</span>
             </header>
             <ul>{(NOTES[m] ?? []).map((n, i) => <li key={i}>{n}</li>)}</ul>
-            <div className="table-wrap">
+            <div className="table-wrap" tabIndex={0}>
               <table className="stats">
                 <thead>
                   <tr>

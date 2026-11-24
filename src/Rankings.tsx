@@ -96,7 +96,7 @@ export default function Rankings() {
         </div>
         <input className="search" type="search" placeholder="Search player or team" value={q} onChange={e => setQ(e.target.value)} aria-label="Search players" />
       </div>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0}>
         <table className="stats">
           <thead>
             <tr>
@@ -104,11 +104,12 @@ export default function Rankings() {
               <th className="l">Pos</th>
               <th className="l">Team</th>
               {cols.map(c => (
-                <th key={c.key} className="sortable" onClick={() => clickSort(c)}
-                    aria-sort={sort.key === c.key ? (sort.asc ? 'ascending' : 'descending') : undefined}
-                    title={c.cat ? `Weight ${v.weights[c.cat]} in this league` : undefined}>
-                  {c.label}
-                  {c.cat && <span className="wt">×{v.weights[c.cat].toFixed(2)}</span>}
+                <th key={c.key} className="sortable" scope="col"
+                    aria-sort={sort.key === c.key ? (sort.asc ? 'ascending' : 'descending') : undefined}>
+                  <button type="button" onClick={() => clickSort(c)} title={c.cat ? `Weight ${v.weights[c.cat]} in this league` : `Sort by ${c.label}`}>
+                    {c.label}
+                    {c.cat && <span className="wt">×{v.weights[c.cat].toFixed(2)}</span>}
+                  </button>
                 </th>
               ))}
             </tr>

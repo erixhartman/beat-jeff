@@ -25,7 +25,7 @@ export default function RotoTab() {
           <button aria-pressed={show === 'value'} onClick={() => setShow('value')}>Totals</button>
         </div>
       </div>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0}>
         <table className="stats">
           <thead>
             <tr>

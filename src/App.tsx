@@ -37,6 +37,8 @@ export default function App() {
   useEffect(() => { document.title = tab === 'jeff' ? 'Beat Jeff' : `${active.label} · Beat Jeff` }, [tab, active.label])
   return (
     <>
+      {/* The tabs live in the URL hash, so skip by moving focus instead of changing the hash. */}
+      <a className="skip" href="#main" onClick={e => { e.preventDefault(); document.getElementById('main')?.focus() }}>Skip to content</a>
       <header className="mast">
         <div className="mast-inner">
           <h1 className="wordmark">Beat <span>Jeff</span></h1>
@@ -48,7 +50,7 @@ export default function App() {
           </nav>
         </div>
       </header>
-      <main>{active.el}</main>
+      <main id="main" tabIndex={-1}>{active.el}</main>
       <footer className="site">
         Built by Eric Hartman with Claude. League data from the league's public Yahoo pages (2023–26); 2026 stats from the MLB Stats API;
         2027 ranks from NBC/Rotoworld and Pitcher List. Not affiliated with Yahoo or MLB.

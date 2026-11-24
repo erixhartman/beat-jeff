@@ -47,7 +47,7 @@ export default function Week() {
     <section>
       <h2>Week {d.week}: you vs. {d.opponent}</h2>
       <p className="bigline">Currently {w}–{l}–{12 - w - l}.{swing.length > 0 && <> Close enough to swing: {swing.join(', ')}.</>}</p>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0}>
         <table className="stats">
           <thead><tr><th className="l">Category</th><th>You</th><th>{d.opponent}</th><th className="l">Status</th></tr></thead>
           <tbody>
@@ -66,7 +66,7 @@ export default function Week() {
         <>
           <h3>Two-start pitchers this week</h3>
           <p className="lede">Starters MLB lists as probable twice before Sunday. Probables only run a few days ahead, so this list grows through the week.</p>
-          <div className="table-wrap">
+          <div className="table-wrap" tabIndex={0}>
             <table className="stats">
               <thead><tr><th className="l">Pitcher</th><th className="l">Team</th><th className="l">Starts</th></tr></thead>
               <tbody>{d.twoStart.map(p => <tr key={p.name}><td className="l name">{p.name}</td><td className="l dim">{p.team}</td><td className="l">{p.dates.join(', ')}</td></tr>)}</tbody>

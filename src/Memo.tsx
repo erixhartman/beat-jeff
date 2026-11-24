@@ -46,7 +46,7 @@ export default function Memo() {
         <h2>Monday memo</h2>
         <p className="lede">Eric's private weekly plan. Enter the GitHub token to read it.</p>
         <form className="controls" onSubmit={signIn}>
-          <input className="search" type="password" autoComplete="off" placeholder="GitHub token" value={draft} onChange={e => setDraft(e.target.value)} aria-label="GitHub token" style={{ minWidth: 320 }} />
+          <input className="search" type="password" autoComplete="off" placeholder="GitHub token" value={draft} onChange={e => setDraft(e.target.value)} aria-label="GitHub token" style={{ minWidth: 'min(320px, 100%)' }} />
           <button className="btn primary" type="submit">Open memo</button>
         </form>
         {error && <p className="mine-note">{error}</p>}
@@ -81,7 +81,7 @@ export default function Memo() {
 
           <h3>Waiver scout</h3>
           <p className="note" style={{ marginTop: 0 }}>Last 14 days, scored on this league's weights and tilted toward your weakest categories.</p>
-          <div className="table-wrap">
+          <div className="table-wrap" tabIndex={0}>
             <table className="stats">
               <thead><tr><th className="l">Type</th><th className="l">Player</th><th className="l">Why</th></tr></thead>
               <tbody>
@@ -94,7 +94,7 @@ export default function Memo() {
 
           <h3>Trade ideas</h3>
           {memo.trades?.length ? (
-            <div className="table-wrap">
+            <div className="table-wrap" tabIndex={0}>
               <table className="stats">
                 <thead><tr><th className="l">Team</th><th className="l">Ask for</th><th className="l">Offer</th><th className="l">Why it fits</th></tr></thead>
                 <tbody>{memo.trades.map(t => (
@@ -110,7 +110,7 @@ export default function Memo() {
 
         <aside className="side">
           <div className="panel">
-            <h4>Category ranks, season to date</h4>
+            <h3>Category ranks, season to date</h3>
             <table className="stats" style={{ fontSize: 14 }}>
               <thead><tr><th className="l">Cat</th><th>You</th><th>Them</th></tr></thead>
               <tbody>{CATS.map(c => {
@@ -123,7 +123,7 @@ export default function Memo() {
             <p className="note">1 = best in the league. Close = within one place of each other.</p>
           </div>
           <div className="panel">
-            <h4>For the league chat</h4>
+            <h3>For the league chat</h3>
             <p style={{ font: '500 15px/1.45 var(--font-table)', margin: '0 0 10px', whiteSpace: 'pre-line' }}>{memo.post}</p>
             <button className="btn" onClick={copy}>{copied ? 'Copied' : 'Copy post'}</button>
           </div>
