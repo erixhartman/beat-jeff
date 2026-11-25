@@ -81,6 +81,12 @@ export default function Scouting() {
               <span className="team">{m === 'Wes' ? 'Takes over O.M.G. for 2027' : lg.team2026[m]}</span>
             </header>
             <ul>{(NOTES[m] ?? []).map((n, i) => <li key={i}>{n}</li>)}</ul>
+            <p className="note">
+              {top.length > 0 && <>Most frequent trade partners: {top.map(([p, n]) => `${p} (${n})`).join(', ')}. </>}
+              {last && <>Weakest categories in {last.season}: {weak.map(([c, r]) => `${c} (#${r})`).join(', ')}.</>}
+            </p>
+            <details className="how">
+            <summary>Show the numbers</summary>
             <div className="table-wrap" tabIndex={0}>
               <table className="stats">
                 <thead>
@@ -102,10 +108,7 @@ export default function Scouting() {
                 </tbody>
               </table>
             </div>
-            <p className="note">
-              {top.length > 0 && <>Most frequent trade partners: {top.map(([p, n]) => `${p} (${n})`).join(', ')}. </>}
-              {last && <>Weakest categories in {last.season}: {weak.map(([c, r]) => `${c} (#${r})`).join(', ')}.</>}
-            </p>
+            </details>
           </article>
         )
       })}

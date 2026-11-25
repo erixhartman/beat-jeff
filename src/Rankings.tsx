@@ -34,7 +34,6 @@ export default function Rankings() {
       vol,
       ...statCols,
       { key: 'var', label: 'Value', get: r => r.var, fmt: n => n.toFixed(1), cls: 'val' },
-      { key: 'equalRank', label: 'Std rk', get: r => r.equalRank, asc: true, cls: 'dim' },
       { key: 'yahoo', label: 'Yahoo', get: r => r.yahoo, asc: true, cls: 'dim' },
       { key: 'nbc', label: 'NBC 27', get: r => r.nbc, asc: true, cls: 'dim' },
       ...(g === 'P' ? [{ key: 'pl', label: 'PL SP 27', get: (r: Row) => (r as Pitcher).pl, asc: true, cls: 'dim' } as Col] : []),
@@ -131,12 +130,17 @@ export default function Rankings() {
         </table>
       </div>
       <p className="note">
-        Rank runs 1–500 across hitters and pitchers together. Value = sum of category scores × weight, measured above a replacement-level player
-        (the 156th-best hitter or 108th-best pitcher, about what 12 teams roster), so a hitter's and a pitcher's value can be compared. Std rk = rank
-        within hitters or pitchers if every category counted equally. Yahoo = final 2026 rank in our league (blank if
-        Yahoo didn't list him in its top 300). Positions follow Yahoo's rule of 5 starts or 10 games at a position in 2026; pitchers are SP with 5+ starts
-        and RP with 10+ relief appearances. Small sample = under 300 AB, or under 80 IP for starters and 40 IP for relievers.
+        Rank runs 1–500 across hitters and pitchers. Value is measured above a replacement-level player, so a hitter and a pitcher can be compared.
       </p>
+      <details className="how note">
+        <summary>How this is scored</summary>
+        <p>
+          Value = sum of category scores × weight, above the 156th-best hitter or 108th-best pitcher (about what 12 teams roster).
+          Yahoo = final 2026 rank in our league, blank if Yahoo didn't list him in its top 300.
+          Positions follow Yahoo's rule of 5 starts or 10 games at a position in 2026; pitchers are SP with 5+ starts and RP with 10+ relief appearances.
+          Small sample = under 300 AB, or under 80 IP for starters and 40 IP for relievers.
+        </p>
+      </details>
     </section>
   )
 }

@@ -51,8 +51,7 @@ export default function RotoTab() {
         </table>
       </div>
       <p className="note">
-        Built from each week's matchup totals. Counting stats are exact; AVG is exact; ERA, WHIP and K/BB are rebuilt from weekly lines and OPS is
-        weighted by at-bats, so those can differ from Yahoo's by a hair. Updated {d.updated}.
+        ERA, WHIP, K/BB and OPS are rebuilt from weekly totals, so they can be off Yahoo's by a hair. Updated {d.updated}.
       </p>
     </section>
   )

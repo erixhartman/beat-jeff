@@ -11,7 +11,7 @@ export default function BeatJeff() {
   const cur = seasons.find(s => s.season === (season ?? seasons[seasons.length - 1].season))!
   const total = (ws: typeof cur.weeks) => ws.reduce((a, w) => [a[0] + w.w, a[1] + w.l, a[2] + w.t], [0, 0, 0])
   const life = total(seasons.flatMap(s => s.weeks))
-  const [w, l, t] = total(cur.weeks)
+  const [w, l] = total(cur.weeks)
   const weeksWon = cur.weeks.filter(x => x.w > x.l).length
   const weeksLost = cur.weeks.filter(x => x.w < x.l).length
   const actual = seasons.flatMap(s => s.weeks.filter(x => x.actual).map(x => ({ ...x, season: s.season })))
@@ -63,7 +63,7 @@ export default function BeatJeff() {
           <div className="sb-cell sb-total">{l}</div>
         </div>
         <p className="sb-caption">
-          {cur.season}: {cur.eric} vs. {cur.jeff}. You'd have won {weeksWon} weeks and lost {weeksLost}{t ? `, with ${t} tied categories` : ''}.
+          {cur.season}: {cur.eric} vs. {cur.jeff}. You'd have won {weeksWon} weeks and lost {weeksLost}.
           {' '}Against the whole league every week, you won {apPct(ea)}% of categories and Jeff won {apPct(ja)}%.
         </p>
       </div>

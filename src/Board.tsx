@@ -145,9 +145,8 @@ export default function Board() {
             </table>
           </div>
           <p className="note">
-            Expected pick comes from the experts' 2027 rankings (NBC's top 150, then Pitcher List's order for starters, then 2026 value for everyone else).
-            {yr} rank is this league's own scoring ({yr === '2027' ? 'of the 2027 projections' : 'of last season'}), so a big gap between the two is either a bargain or a warning: check why.
-            The chance he's still there assumes picks land within about 30% of the expected slot. It's a rough guide, not a projection of this room.
+            Expected pick uses the experts' 2027 rankings; {yr} rank uses this league's scoring. A big gap is a bargain or a warning.
+            The odds he's still there are a rough guide.
           </p>
         </div>
         <aside className="side">
