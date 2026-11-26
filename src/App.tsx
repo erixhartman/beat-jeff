@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Rankings from './Rankings.tsx'
 import Board from './Board.tsx'
 import Tendencies from './Tendencies.tsx'
@@ -55,6 +56,7 @@ export default function App() {
         Built by Eric Hartman with Claude. League data from the league's public Yahoo pages (2023–26); 2026 stats from the MLB Stats API;
         2027 ranks from NBC/Rotoworld and Pitcher List. Not affiliated with Yahoo or MLB.
       </footer>
+      <Analytics />
     </>
   )
 }
