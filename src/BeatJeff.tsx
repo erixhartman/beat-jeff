@@ -32,13 +32,21 @@ export default function BeatJeff() {
   const apPct = (r: number[]) => ((r[0] + r[2] / 2) / (r[0] + r[1] + r[2]) * 100).toFixed(1)
 
   return (
-    <section>
+    <section className="rivalry">
+      <p className="rivalry-kicker">The rivalry · Since 2023</p>
       <h2>You vs. Jeff, every week</h2>
       <p className="lede">
         Jeff has finished 1st, 3rd, 1st and 2nd. This scores every regular-season week as if you'd played him: each number is how many of the
         12 categories you won that week. A lit number won the week.
       </p>
-      <p className="bigline">Since 2023: {life[0]}–{life[1]}–{life[2]} in categories against Jeff.</p>
+      <div className="rivalry-record">
+        <p className="rivalry-record-label">Lifetime head-to-head category record · Since 2023</p>
+        <dl className="rivalry-tally">
+          <div><dt>Eric wins</dt><dd>{life[0]}</dd></div>
+          <div className="rival"><dt>Jeff wins</dt><dd>{life[1]}</dd></div>
+          <div><dt>Category ties</dt><dd>{life[2]}</dd></div>
+        </dl>
+      </div>
 
       <div className="controls">
         <div className="seg" role="group" aria-label="Season">
@@ -47,6 +55,7 @@ export default function BeatJeff() {
       </div>
 
       <div className="scoreboard" tabIndex={0} aria-label="Weekly scoreboard, Eric against Jeff" role="region" style={{ ['--n' as string]: cur.weeks.length }}>
+        <p className="scoreboard-title">The ballpark scoreboard · {cur.season}</p>
         <div className="sb-row">
           <div className="sb-label" style={{ fontSize: 15, color: '#c9d4cc' }}>Week</div>
           {cur.weeks.map(x => <div key={x.week} className="sb-head">{x.week}</div>)}

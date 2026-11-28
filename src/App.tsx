@@ -42,8 +42,11 @@ export default function App() {
       <a className="skip" href="#main" onClick={e => { e.preventDefault(); document.getElementById('main')?.focus() }}>Skip to content</a>
       <header className="mast">
         <div className="mast-inner">
-          <h1 className="wordmark">Beat <span>Jeff</span></h1>
-          <p className="mast-meta">Draft and season planner for Jeters Never Prosper, a 12-team Yahoo H2H league.</p>
+          <div className="brand-block">
+            <p className="brand-kicker">Jeters Never Prosper · Fantasy baseball</p>
+            <h1 className="wordmark">Beat <span>Jeff!</span></h1>
+          </div>
+          <p className="mast-meta">Draft and season planner for a 12-team Yahoo H2H league. One goal: beat Jeff.</p>
           <nav className="tabs" aria-label="Sections">
             {TABS.map(t => (
               <a key={t.id} href={`#${t.id}`} aria-current={t.id === tab ? 'page' : undefined}>{t.label}</a>

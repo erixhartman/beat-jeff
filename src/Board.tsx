@@ -85,7 +85,8 @@ export default function Board() {
   const maxAbs = Math.max(3, ...Object.values(profile).map(Math.abs))
 
   return (
-    <section>
+    <section className="draft-room">
+      <p className="rivalry-kicker">The front office · 2027 draft</p>
       <h2>Draft board</h2>
       <p className="lede">
         You pick 12th, so you go back to back at every turn. Mark each pick as it happens: <strong>Taken</strong> for anyone else, <strong>Mine</strong> for yours.
